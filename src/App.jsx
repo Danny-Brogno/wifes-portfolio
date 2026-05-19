@@ -11,6 +11,7 @@ import { Footer } from './components/footer.jsx';
 
 // CSS IMPORT
 import './tricsy-style.css';
+import './danny-style.css';
 
 function App() {
   

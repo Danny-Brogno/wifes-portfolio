@@ -1,13 +1,13 @@
-import { useEffect } from 'react'
+import React, { useEffect } from 'react';
 import profileImg from '../assets/profile.png';
 
 export const HomePage = ({currentPage, setCurrentPage}) => {
   
   useEffect(() => {
-  // Scroll to top
-  window.scrollTo(0, 0);
-  // Set Title
-  document.title = "Homepage";
+    // Scroll to top
+    window.scrollTo(0, 0);
+    // Set Title
+    document.title = "Homepage";
   }, []);
   
   return (
@@ -34,7 +34,7 @@ export const HomePage = ({currentPage, setCurrentPage}) => {
                     I can help your business to
                   </div>
                   <h1 className="display-3 fw-bolder mb-5">
-                    <span className="text-gradient d-inline">
+                    <span className="text-gradient">
                       Drive predictable revenue and market expansion
                     </span>
                   </h1>
@@ -177,7 +177,7 @@ export const HomePage = ({currentPage, setCurrentPage}) => {
         </header>
 
         <section className="bg-light py-5">
-          <div className="container px-5">
+          <div className="container under-jumbotron px-5">
             <div className="row gx-5 justify-content-center">
               <div className="col-xxl-8">
                 <div className="text-center my-5">

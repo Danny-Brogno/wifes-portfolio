@@ -1,0 +1,133 @@
+/* .display-3 [data-splitting] .char {
+  visibility: hidden;
+  animation: animate 0s steps(2) forwards;
+  animation-delay: calc(0.05s * var(--char-index));
+}
+
+@keyframes animate {
+  0% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+} */
+
+/* ------------------------------------------- */
+/* ------------------------------------------- */
+/* ------------------------------------------- */
+/* ------------------------------------------- */
+/* ------------------------------------------- */
+
+/* MEDIUM - MEDIA QUERY START */
+/* MEDIUM - MEDIA QUERY START */
+/* MEDIUM - MEDIA QUERY START */
+/* MEDIUM - MEDIA QUERY START */
+/* MEDIUM - MEDIA QUERY START */
+
+@media screen and (max-width: 1316px) and (max-width: 1023px) {
+  nav .container div.d-flex.flex-column.align-items-flex-start {
+    align-items: center;
+  }
+}
+
+/* MEDIUM - MEDIA QUERY END */
+/* MEDIUM - MEDIA QUERY END */
+/* MEDIUM - MEDIA QUERY END */
+/* MEDIUM - MEDIA QUERY END */
+/* MEDIUM - MEDIA QUERY END */
+
+/* ------------------------------------------- */
+/* ------------------------------------------- */
+/* ------------------------------------------- */
+/* ------------------------------------------- */
+/* ------------------------------------------- */
+
+/* SMALL - MEDIA QUERY START */
+/* SMALL - MEDIA QUERY START */
+/* SMALL - MEDIA QUERY START */
+/* SMALL - MEDIA QUERY START */
+/* SMALL - MEDIA QUERY START */
+
+@media screen and (max-width: 1024px) and (orientation: portrait) {
+
+  nav .container div.d-flex.flex-column.align-items-flex-start {
+    align-items: center;
+  }
+}
+
+/* SMALL - MEDIA QUERY END */
+/* SMALL - MEDIA QUERY END */
+/* SMALL - MEDIA QUERY END */
+/* SMALL - MEDIA QUERY END */
+/* SMALL - MEDIA QUERY END */
+
+/* ------------------------------------------- */
+/* ------------------------------------------- */
+/* ------------------------------------------- */
+/* ------------------------------------------- */
+/* ------------------------------------------- */
+
+
+/* @media screen and (max-width: 1024px) and (orientation: portrait) {
+  
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  
+  .nav-item {
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .navbar > div.container {
+    padding: 0rem 1rem !important;
+  }
+  
+  .navbar > div.container .navbar-brand {
+    padding: 0;
+    margin: 0rem 0rem 1rem 0rem;
+  }
+  
+  main header div.container div.row div.col-xxl-5 div.text-center.text-xxl-start,
+  section div.under-jumbotron div.row div.col-xxl-8 div.text-center.my-5 {
+    text-align: left !important;
+    margin: 0 !important;
+  }
+  
+  main header div.container {
+    padding: 0rem 1rem 0rem 1rem !important;
+    margin: 0 !important;
+  }
+  
+  main header div.container .text-gradient {
+    line-height: 1.5rem;
+  }
+  
+  main header div.container span.text-gradient.d-inline {
+    font-size: 1.5rem !important;
+
+  }
+  
+  main section.bg-light.py-5:has(.under-jumbotron) {
+    padding: 0 !important;
+  }
+  
+  main section div.container.under-jumbotron {
+    padding: 0rem 1rem 0rem 1rem !important;
+  }
+  
+  main section div.d-flex.justify-content-center {
+    margin: 2rem 0rem;
+  }
+  
+  footer div.container {
+    padding:0 !important;
+  }
+  
+  footer div.container .row .col-auto .small {
+    text-align: center;
+  }
+  
+} */
