@@ -375,6 +375,10 @@ select:disabled {
   opacity: 1;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 [list]:not([type=date]):not([type=datetime-local]):not([type=month]):not([type=week]):not([type=time])::-webkit-calendar-picker-indicator {
   display: none !important;
 }
@@ -11710,7 +11714,7 @@ html {
 @media (min-width: 1200px) {
   .profile {
     height: 35vw;
-    width: 35vw;
+    width: 37vw;
   }
   .profile .profile-img {
     height: 40vw;
