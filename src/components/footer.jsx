@@ -19,21 +19,20 @@ export const Footer = () => {
             </div>
           </div>
           
+          <div className="col-auto scroll-top-btn" onClick={scrollToTheTop}>
+            <div className="bg-gradient-primary-to-secondary">
+              <div>
+                <i className="bi bi-chevron-up"></i>
+              </div>
+            </div>
+          </div>
+          
           <div className="col-auto">
             <a className="small" href="#!">Privacy</a>
             <span className="mx-1">&middot;</span>
             <a className="small" href="#!">Terms</a>
             <span className="mx-1">&middot;</span>
             <a className="small" href="#!">Contact</a>
-          </div>
-          
-
-          <div className="col-auto" onClick={scrollToTheTop}>
-            <ul>
-              <li>
-                <i className="fas fa-chevron-up"></i>
-              </li>
-            </ul>
           </div>
           
         </div>
