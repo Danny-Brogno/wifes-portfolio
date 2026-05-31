@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const ChangeThisNameHere = () => {
+export const ChangeThisNameThere = () => {
   return (
     
   )
