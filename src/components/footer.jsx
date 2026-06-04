@@ -22,7 +22,7 @@ export const Footer = () => {
           <div className="col-auto scroll-top-btn" onClick={scrollToTheTop}>
             <div className="bg-gradient-primary-to-secondary">
               <div>
-                <i className="bi bi-chevron-up"></i>
+                <i id="foot-chevron" className="bi bi-chevron-up"></i>
               </div>
             </div>
           </div>
