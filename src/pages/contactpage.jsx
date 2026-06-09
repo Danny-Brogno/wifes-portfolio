@@ -23,7 +23,7 @@ export const ContactPage = () => {
       [e.target.id]: e.target.value
     });
 
-    // FIX FOR BUG N2: If an error is showing and the user changes or clears fields, remove the alert banner
+    // If an error is showing and the user changes or clears fields, remove the alert banner
     if (status) {
       setStatus(null);
     }

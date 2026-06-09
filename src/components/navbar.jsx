@@ -11,7 +11,7 @@ export const Navbar = ({ currentPage, setCurrentPage }) => {
               className="fw-bolder text-primary cursor-pointer title"
               onClick={() => setCurrentPage("homepage")}
             >
-              Majesca Maclan
+              Majesca Maclan Brogno
             </span>
           </a>
           
