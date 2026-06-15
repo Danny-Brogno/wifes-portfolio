@@ -2,7 +2,7 @@ import React from 'react';
 
 export const Navbar = ({ currentPage, setCurrentPage }) => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-white py-3">
+    <nav className="navbar navbar-expand-lg navbar-light bg-light py-3">
       <div className="container px-5">
         {/* Changed to flex-column on mobile, resets back to row on large lg desktops */}
         <div className="d-flex flex-column align-items-flex-start d-lg-contents w-100">

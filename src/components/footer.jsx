@@ -9,7 +9,7 @@ const scrollToTheTop = () => {
 
 export const Footer = () => {
   return (
-    <footer className="bg-white py-4 mt-auto">
+    <footer className="bg-light py-4 mt-auto">
       <div className="container px-5">
         <div className="row align-items-center justify-content-between flex-column flex-sm-row">
           

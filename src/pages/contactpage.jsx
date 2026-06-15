@@ -71,7 +71,7 @@ export const ContactPage = () => {
   };
 
   return (
-    <section className="py-5">
+    <section className="contact-page py-5">
       <div className="container px-5">
         <div className="bg-light rounded-4 py-5 px-4 px-md-5">
           <div className="text-center mb-5">

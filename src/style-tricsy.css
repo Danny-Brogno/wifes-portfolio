@@ -44,7 +44,7 @@
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
   /* COLOR SELECTION */
-  --bs-primary-rgb: 139, 128, 0;
+  --bs-primary-rgb: 228, 201, 0;
   --bs-secondary-rgb: 226, 30, 128;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
@@ -2841,21 +2841,30 @@ textarea.form-control-lg {
 .btn-check:checked + .btn:focus-visible, :not(.btn-check) + .btn:active:focus-visible, .btn:first-child:active:focus-visible, .btn.active:focus-visible, .btn.show:focus-visible {
   box-shadow: var(--bs-btn-focus-box-shadow);
 }
-.btn:disabled, .btn.disabled, fieldset:disabled .btn {
-  color: var(--bs-btn-disabled-color);
-  pointer-events: none;
-  background-color: var(--bs-btn-disabled-bg);
-  border-color: var(--bs-btn-disabled-border-color);
+
+.btn:disabled,
+.btn.disabled,
+fieldset:disabled .btn {
+  color: white !important;
+  /* This allows the mouse to interact with the element so the cursor shows up */
+  pointer-events: auto !important; 
+  
+  /* This will now visually display correctly */
+  cursor: not-allowed !important; 
+  
+  color: var(--bs-black);
+  background: linear-gradient(135deg, rgb(var(--bs-primary-rgb)) 0%, var(--bs-black) 100%);
+  border-color: rgb(var(--bs-primary-rgb));
   opacity: var(--bs-btn-disabled-opacity);
 }
 
 .btn-primary {
-  --bs-btn-color: #fff;
-  --bs-btn-bg: #1e30f3;
-  --bs-btn-border-color: #1e30f3;
-  --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #1a29cf;
-  --bs-btn-hover-border-color: #1826c2;
+  --bs-btn-color: var(--bs-black);
+  --bs-btn-bg: rgb(var(--bs-primary-rgb));
+  --bs-btn-border-color: var(--bs-black);
+  --bs-btn-hover-color: rgb(var(--bs-primary-rgb));
+  --bs-btn-hover-bg: var(--bs-black);
+  --bs-btn-hover-border-color: rgb(var(--bs-primary-rgb));
   --bs-btn-focus-shadow-rgb: 64, 79, 245;
   --bs-btn-active-color: #fff;
   --bs-btn-active-bg: #1826c2;
@@ -8196,7 +8205,7 @@ textarea.form-control-lg {
 
 .text-secondary {
   --bs-text-opacity: 1;
-  color: rgba(var(--bs-secondary-rgb), var(--bs-text-opacity)) !important;
+  color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
 }
 
 .text-success {
