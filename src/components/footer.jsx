@@ -15,7 +15,7 @@ export const Footer = () => {
           
           <div className="col-auto">
             <div className="small m-0">
-              Copyright &copy; Your Website 2023
+              &copy; 2026 Danny Brogno. All Rights Reserved.
             </div>
           </div>
           

@@ -1,13 +1,37 @@
-/* SCROLL TO THE TOP - START*/
-/* SCROLL TO THE TOP - START*/
-/* SCROLL TO THE TOP - START*/
+/* ALL PURPOSE CLASSES */
+a {
+  text-decoration: none !important;
+  list-style: none !important;
+  color: inherit !important;
+}
 
-.scroll-top-btn {
+/* NAVBAR */
+nav.navbar div.container div:first-of-type a span {
+  font-size: 2rem;
+}
+
+nav.navbar div.container div#navbarSupportedContent ul.navbar-nav {
+  font-size: 1.4rem;
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
+}
+
+nav.navbar div.container div#navbarSupportedContent ul.navbar-nav li {
+  border-bottom: 2px solid transparent !important;
+  transition: 0.3s;
+}
+
+nav.navbar div.container div#navbarSupportedContent ul.navbar-nav li:hover {
+  border-bottom: 2px solid rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
+}
+
+/* FOOTER */
+footer .scroll-top-btn {
   padding: 0;
   margin: 0;
 }
 
-.scroll-top-btn div:last-child {
+footer .scroll-top-btn div:last-child {
   color: white;
   font-size: 1.5rem;
   font-weight: bold;
@@ -22,7 +46,7 @@
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
-#foot-chevron {
+footer #foot-chevron {
   width: 100%;
   height: 100%;
   display: flex;
@@ -42,7 +66,11 @@
   }
 }
 
-
+/* MEDIUM - MEDIA QUERY END */
+/* MEDIUM - MEDIA QUERY END */
+/* MEDIUM - MEDIA QUERY END */
+/* MEDIUM - MEDIA QUERY END */
+/* MEDIUM - MEDIA QUERY END */
 
 /* ------------------------------------------- */
 /* ------------------------------------------- */
@@ -74,67 +102,3 @@
 /* ------------------------------------------- */
 /* ------------------------------------------- */
 /* ------------------------------------------- */
-
-
-/* @media screen and (max-width: 1024px) and (orientation: portrait) {
-  
-  html, body {
-    max-width: 100%;
-    overflow-x: hidden;
-  }
-  
-  .nav-item {
-    justify-content: center;
-    text-align: center;
-  }
-  
-  .navbar > div.container {
-    padding: 0rem 1rem !important;
-  }
-  
-  .navbar > div.container .navbar-brand {
-    padding: 0;
-    margin: 0rem 0rem 1rem 0rem;
-  }
-  
-  main header div.container div.row div.col-xxl-5 div.text-center.text-xxl-start,
-  section div.under-jumbotron div.row div.col-xxl-8 div.text-center.my-5 {
-    text-align: left !important;
-    margin: 0 !important;
-  }
-  
-  main header div.container {
-    padding: 0rem 1rem 0rem 1rem !important;
-    margin: 0 !important;
-  }
-  
-  main header div.container .text-gradient {
-    line-height: 1.5rem;
-  }
-  
-  main header div.container span.text-gradient.d-inline {
-    font-size: 1.5rem !important;
-
-  }
-  
-  main section.bg-light.py-5:has(.under-jumbotron) {
-    padding: 0 !important;
-  }
-  
-  main section div.container.under-jumbotron {
-    padding: 0rem 1rem 0rem 1rem !important;
-  }
-  
-  main section div.d-flex.justify-content-center {
-    margin: 2rem 0rem;
-  }
-  
-  footer div.container {
-    padding:0 !important;
-  }
-  
-  footer div.container .row .col-auto .small {
-    text-align: center;
-  }
-  
-} */

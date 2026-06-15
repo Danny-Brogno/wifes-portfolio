@@ -10,14 +10,15 @@ import { Navbar } from './components/navbar.jsx';
 import { Footer } from './components/footer.jsx';
 
 // CSS IMPORT
-import './tricsy-style.css';
-import './danny-style.css';
+import './style-tricsy.css';
+import './style-danny.css';
 
 function App() {
   
   const [currentPage, setCurrentPage] = useState("homepage");
   return (
       <div id="App">
+
         {/* NAVBAR IS IN ALL PAGES */}
         <Navbar setCurrentPage={setCurrentPage} currentPage={currentPage}/>
         
