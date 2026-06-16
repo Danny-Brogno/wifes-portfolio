@@ -7,9 +7,6 @@ export const HomePage = ({ currentPage, setCurrentPage }) => {
   const targetRef = useRef(null);
   
   useEffect(() => {
-    // Scroll to top
-    window.scrollTo(0, 0);
-    // Set Title
     document.title = "Homepage";
 
     // Set up the Intersection Observer inside the hook
@@ -65,7 +62,7 @@ export const HomePage = ({ currentPage, setCurrentPage }) => {
                       Resume
                     </a>
                     <a className="btn btn-outline-dark btn-lg px-5 py-3 fs-6 fw-bolder" onClick={() => setCurrentPage("contactpage")}>
-                      Projects
+                      Contact
                     </a>
                   </div>
                 </div>

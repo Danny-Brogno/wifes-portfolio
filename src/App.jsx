@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 // PAGES
 import { HomePage } from './pages/homepage.jsx';
@@ -16,6 +16,19 @@ import './style-danny.css';
 function App() {
   
   const [currentPage, setCurrentPage] = useState("homepage");
+  
+  useEffect(() => {
+    // requestAnimationFrame forces the browser to wait until the 
+    // new page elements are drawn before running the scroll logic
+    requestAnimationFrame(() => {
+      window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'instant'
+      });
+    });
+  }, [currentPage]); 
+  
   return (
       <div id="App">
 

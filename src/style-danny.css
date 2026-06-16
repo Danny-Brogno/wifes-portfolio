@@ -18,7 +18,7 @@ nav.navbar div.container div:first-of-type a span {
 nav.navbar div.container div#navbarSupportedContent ul.navbar-nav {
   font-size: 1.4rem;
   --bs-text-opacity: 1;
-  color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
+  color: var(--bs-black), var(--bs-text-opacity)) !important;
 }
 
 nav.navbar div.container div#navbarSupportedContent ul.navbar-nav li {
@@ -166,6 +166,104 @@ footer #foot-chevron {
   align-items: center;
 }
 
+
+footer ul.footer-list {
+  display: flex;
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
+footer ul.footer-list li {
+  list-style: none;
+  margin-right: 2rem;
+  letter-spacing: 2px;
+}
+
+footer ul.footer-list li:last-of-type {
+  margin-right: 0;
+}
+
+/* --------------------------------------------------------- */
+/* --------------------------------------------------------- */
+/* --------------------------------------------------------- */
+/* --------------------------------------------------------- */
+/* --------------------------------------------------------- */
+
+/* MEDIA QUERY SPECIFIC FOR GOOGLE CHROME - START*/
+/* MEDIA QUERY SPECIFIC FOR GOOGLE CHROME - START*/
+/* MEDIA QUERY SPECIFIC FOR GOOGLE CHROME - START*/
+
+@supports (-webkit-appearance:none) and (not (-moz-appearance:none)) {
+  /* CSS rules placed here target Chrome, Safari, and Chromium Edge */
+  
+  /* DESKTOP VIEW - START*/
+  /* DESKTOP VIEW - START*/
+  /* DESKTOP VIEW - START*/
+  
+  nav.navbar div.container div:first-of-type a span {
+    font-size: 1.5rem;
+  }
+  
+  nav.navbar div.container div#navbarSupportedContent ul.navbar-nav {
+    font-size: 1rem;
+  }
+  
+  header.py-5 {
+    padding-bottom: 0 !important;
+  }
+  
+  main section .under-jumbotron p.lead {
+    font-size: 1.5rem;
+  }
+  
+  .homepage div.text-center h1 .text-gradient {
+    font-size: 2.5rem !important;
+  }
+  
+  /* DESKTOP VIEW - END*/
+  /* DESKTOP VIEW - END*/
+  /* DESKTOP VIEW - END*/
+  
+}
+
+/* MEDIA QUERY SPECIFIC FOR GOOGLE CHROME - END*/
+/* MEDIA QUERY SPECIFIC FOR GOOGLE CHROME - END*/
+/* MEDIA QUERY SPECIFIC FOR GOOGLE CHROME - END*/
+
+/* --------------------------------------------------------- */
+/* --------------------------------------------------------- */
+/* --------------------------------------------------------- */
+/* --------------------------------------------------------- */
+/* --------------------------------------------------------- */
+
+/* MEDIA QUERY THAT FIXES THE SCROLLING TEXT bug - START*/
+/* MEDIA QUERY THAT FIXES THE SCROLLING TEXT bug - START*/
+/* MEDIA QUERY THAT FIXES THE SCROLLING TEXT bug - START*/
+
+@media screen and (max-width: 1374px) {
+  
+  main section .under-jumbotron p.lead {
+    white-space: normal;
+    overflow: visible;
+    display: block;
+  }
+
+  main section .under-jumbotron p.lead.animate-typing {
+    border-right: none;
+    animation: none;
+  }
+}
+
+/* MEDIA QUERY THAT FIXES THE SCROLLING TEXT bug - END*/
+/* MEDIA QUERY THAT FIXES THE SCROLLING TEXT bug - END*/
+/* MEDIA QUERY THAT FIXES THE SCROLLING TEXT bug - END*/
+
+/* --------------------------------------------------------- */
+/* --------------------------------------------------------- */
+/* --------------------------------------------------------- */
+/* --------------------------------------------------------- */
+/* --------------------------------------------------------- */
+
 /* MEDIUM - MEDIA QUERY START */
 /* MEDIUM - MEDIA QUERY START */
 /* MEDIUM - MEDIA QUERY START */
@@ -173,9 +271,19 @@ footer #foot-chevron {
 /* MEDIUM - MEDIA QUERY START */
 
 @media screen and (max-width: 1316px) and (max-width: 1023px) {
+  
   nav .container div.d-flex.flex-column.align-items-flex-start {
     align-items: center;
   }
+  
+  footer .container .row {
+    flex-direction: column !important;
+  }
+  
+  footer .scroll-top-btn {
+    margin: 2rem 0rem !important;
+  }
+  
 }
 
 /* MEDIUM - MEDIA QUERY END */
@@ -207,7 +315,32 @@ footer #foot-chevron {
     padding:0;
   }
   
+  .homepage.container {
+    padding-bottom: 0 !important;
+  }
   
+  main section .under-jumbotron p.lead {
+    white-space: normal;
+    overflow: visible;
+    display: block;
+  }
+
+  main section .under-jumbotron p.lead.animate-typing {
+    border-right: none;
+    animation: none;
+  }
+  
+  main section .under-jumbotron div.justify-content-evenly {
+    justify-content: space-between !important;
+  }
+  
+  footer .container .row {
+    flex-direction: column;
+  }
+  
+  footer .scroll-top-btn {
+    margin: 2rem 0rem;
+  }
 }
 
 /* SMALL - MEDIA QUERY END */

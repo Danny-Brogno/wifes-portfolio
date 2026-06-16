@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 
 export const ContactPage = () => {
+  
   useEffect(() => {
-    window.scrollTo(0, 0);
     document.title = "Contact page";
   }, []);
 

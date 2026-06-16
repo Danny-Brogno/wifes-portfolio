@@ -3,10 +3,7 @@ import React, { useEffect } from 'react';
 export const ResumePage = () => {
   
   useEffect(() => {
-  // Scroll to top
-  window.scrollTo(0, 0);
-  // Set Title
-  document.title = "Resume page";
+    document.title = "Resume page";
   }, []);
   
   return (
@@ -17,7 +14,7 @@ export const ResumePage = () => {
         </h1>
       </div>
       <div className="row gx-5 justify-content-center">
-        <div className="col-lg-11 col-xl-9 col-xxl-8">
+        <div className="col-lg-12 col-xl-12 col-xxl-12 col-md-12 col-sm-12">
           <section>
             <div className="d-flex align-items-center justify-content-between mb-4">
               <h2 className="text-primary fw-bolder mb-0">Experience</h2>

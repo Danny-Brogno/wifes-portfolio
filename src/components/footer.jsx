@@ -7,7 +7,7 @@ const scrollToTheTop = () => {
   });
 };
 
-export const Footer = () => {
+export const Footer = ({ currentPage, setCurrentPage }) => {
   return (
     <footer className="bg-light py-4 mt-auto">
       <div className="container px-5">
@@ -27,13 +27,17 @@ export const Footer = () => {
             </div>
           </div>
           
-          <div className="col-auto">
-            <a className="small" href="#!">Privacy</a>
-            <span className="mx-1">&middot;</span>
-            <a className="small" href="#!">Terms</a>
-            <span className="mx-1">&middot;</span>
-            <a className="small" href="#!">Contact</a>
-          </div>
+          <ul className="col-auto footer-list">
+            <li className="cursor-pointer" onClick={() => setCurrentPage("homepage")}>
+              Home
+            </li>
+            <li className="cursor-pointer" onClick={() => setCurrentPage("resumepage")}>
+              Resume
+            </li>
+            <li className="cursor-pointer" onClick={() => setCurrentPage("contactpage")}>
+              Contact
+            </li>
+          </ul>
           
         </div>
       </div>
