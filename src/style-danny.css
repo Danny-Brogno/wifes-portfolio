@@ -193,11 +193,19 @@ footer ul.footer-list li:last-of-type {
   margin-right: 0;
 }
 
-/* --------------------------------------------------------- */
-/* --------------------------------------------------------- */
-/* --------------------------------------------------------- */
-/* --------------------------------------------------------- */
-/* --------------------------------------------------------- */
+/* ------------------------------------------- */
+/* ------------------------------------------- */
+/* ------------------------------------------- */
+/* ------------------------------------------- */
+/* ------------------------------------------- */
+
+/* MEDIA QUERIES */
+
+/* ------------------------------------------- */
+/* ------------------------------------------- */
+/* ------------------------------------------- */
+/* ------------------------------------------- */
+/* ------------------------------------------- */
 
 /* MEDIA QUERY SPECIFIC FOR GOOGLE CHROME - START*/
 /* MEDIA QUERY SPECIFIC FOR GOOGLE CHROME - START*/
@@ -268,6 +276,28 @@ footer ul.footer-list li:last-of-type {
 /* MEDIA QUERY THAT FIXES THE SCROLLING TEXT bug - END*/
 /* MEDIA QUERY THAT FIXES THE SCROLLING TEXT bug - END*/
 
+/* ------------------------------------------- */
+/* ------------------------------------------- */
+/* ------------------------------------------- */
+/* ------------------------------------------- */
+/* ------------------------------------------- */
+
+/* LARGE - MEDIA QUERY START */
+/* LARGE - MEDIA QUERY START */
+/* LARGE - MEDIA QUERY START */
+/* LARGE - MEDIA QUERY START */
+/* LARGE - MEDIA QUERY START */
+
+@media screen and (max-width: 1616px) {
+  
+}
+
+/* LARGE - MEDIA QUERY END */
+/* LARGE - MEDIA QUERY END */
+/* LARGE - MEDIA QUERY END */
+/* LARGE - MEDIA QUERY END */
+/* LARGE - MEDIA QUERY END */
+
 /* --------------------------------------------------------- */
 /* --------------------------------------------------------- */
 /* --------------------------------------------------------- */
@@ -280,7 +310,7 @@ footer ul.footer-list li:last-of-type {
 /* MEDIUM - MEDIA QUERY START */
 /* MEDIUM - MEDIA QUERY START */
 
-@media screen and (max-width: 1316px) and (max-width: 1023px) {
+@media screen and (max-width: 1023px) {
   
   nav .container div.d-flex.flex-column.align-items-flex-start {
     align-items: center;
@@ -314,8 +344,8 @@ footer ul.footer-list li:last-of-type {
 /* SMALL - MEDIA QUERY START */
 /* SMALL - MEDIA QUERY START */
 
-@media screen and (max-width: 1024px) and (orientation: portrait) {
-
+@media screen and (max-width: 767px) {
+  
   nav .container div.d-flex.flex-column.align-items-flex-start {
     align-items: center;
   }
