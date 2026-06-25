@@ -1,12 +1,15 @@
 import React, { useEffect, useState, useRef } from 'react';
 import profileImg from '../assets/profile.png';
 
-// Custom component to handle the counting animation smoothly
-const AnimatedCounter = ({ endValue, duration = 2000, suffix = "" }) => {
-  const [count, setCount] = useState(1);
+// Fully fixed component to guarantee zero animation until viewport visibility flips
+const AnimatedCounter = ({ endValue, duration = 2000, suffix = "", startTrigger = false }) => {
+  const [count, setCount] = useState(0); // Start at 0 so it looks clean before animating
 
   useEffect(() => {
-    let start = 1;
+    // STRICT GUARD: If the viewport observer hasn't tripped, do absolutely nothing.
+    if (!startTrigger) return;
+
+    let start = 0;
     const end = parseInt(endValue, 10);
     if (start === end) return;
 
@@ -20,36 +23,57 @@ const AnimatedCounter = ({ endValue, duration = 2000, suffix = "" }) => {
     }, incrementTime);
 
     return () => clearInterval(timer);
-  }, [endValue, duration]);
+  }, [endValue, duration, startTrigger]); // Listens precisely for startTrigger to flip from false to true
 
-  return <>{suffix === "+" ? `${count}+` : `${count}${suffix}`}</>;
+  // If it hasn't triggered yet, render a static '0' or low placeholder value with the suffix
+  if (!startTrigger) {
+    return <>{suffix === " years" ? `0 years` : `0${suffix}`}</>;
+  }
+
+  return <>{suffix === " years" ? `${count} years` : `${count}${suffix}`}</>;
 };
 
 export const HomePage = ({ currentPage, setCurrentPage }) => {
   const [animate, setAnimate] = useState(false);
+  const [animateMetrics, setAnimateMetrics] = useState(false); 
+  
   const targetRef = useRef(null);
+  const metricsRef = useRef(null); 
   
   useEffect(() => {
     document.title = "Majesca Maclan | Homepage";
 
     const currentTarget = targetRef.current;
+    const currentMetricsTarget = metricsRef.current;
 
-    const observer = new IntersectionObserver(
+    // 1. Observer for typing bio text
+    const bioObserver = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
           setAnimate(true); 
-          if (currentTarget) observer.unobserve(currentTarget);
+          if (currentTarget) bioObserver.unobserve(currentTarget);
         }
       },
       { threshold: 0.4 }
     );
 
-    if (currentTarget) {
-      observer.observe(currentTarget);
-    }
+    // 2. Observer for the numbers counter grid
+    const metricsObserver = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setAnimateMetrics(true); 
+          if (currentMetricsTarget) metricsObserver.unobserve(currentMetricsTarget);
+        }
+      },
+      { threshold: 0.1 } // Fires as soon as the very top edge of the card steps into the frame
+    );
+
+    if (currentTarget) bioObserver.observe(currentTarget);
+    if (currentMetricsTarget) metricsObserver.observe(currentMetricsTarget);
 
     return () => {
-      if (currentTarget) observer.disconnect();
+      if (currentTarget) bioObserver.disconnect();
+      if (currentMetricsTarget) metricsObserver.disconnect();
     };
   }, []);
   
@@ -58,12 +82,12 @@ export const HomePage = ({ currentPage, setCurrentPage }) => {
       <main className="flex-shrink-0 bg-light">
 
         {/* JUMBOTRON HEADER */}
-        <header className="py-5 bg-gradient-primary-to-secondary">
+        <header className="py-5">
           <div className="homepage container px-5 pb-5">
             <div className="row gx-5 align-items-center">
               <div className="col-xxl-5">
                 <div className="text-center text-xxl-start">
-                  <div className="badge bg-gradient-primary-to-secondary2 text-white mb-4">
+                  <div className="badge bg-gradient-primary-to-secondary1 text-white mb-4">
                     <div className="text-uppercase">
                       Sales &middot; & &middot; Marketing
                     </div>
@@ -98,18 +122,14 @@ export const HomePage = ({ currentPage, setCurrentPage }) => {
         </header>
 
         {/* METRICS COUNTER GRID */}
-        <div className="container px-5 mt-5">
+        <div className="container px-5 mt-5" ref={metricsRef}>
           <div className="text-center mb-4">
-          <h2 className="display-5 fw-bolder">
-            <span className="text-gradient d-inline">
-              Some of my numbers
-            </span>
-          </h2>
+            <h3 className="fw-bold text-uppercase tracking-wider small text-muted">Some of my numbers</h3>
           </div>
           <div className="row text-center bg-white p-4 rounded shadow-sm border">
             <div className="col-md-4 py-3">
               <h2 className="display-4 fw-bold" style={{ color: '#722f37' }}>
-                <AnimatedCounter endValue="45" suffix="%" />
+                <AnimatedCounter endValue="45" suffix="%" startTrigger={animateMetrics} />
               </h2>
               <p className="text-muted text-uppercase small mb-0 fw-semibold">Revenue Growth Achieved</p>
             </div>
@@ -121,7 +141,7 @@ export const HomePage = ({ currentPage, setCurrentPage }) => {
             </div>
             <div className="col-md-4 py-3">
               <h2 className="display-4 fw-bold" style={{ color: '#722f37' }}>
-                <AnimatedCounter endValue="15" suffix=" years" />
+                <AnimatedCounter endValue="15" suffix=" years" startTrigger={animateMetrics} />
               </h2>
               <p className="text-muted text-uppercase small mb-0 fw-semibold">Luxury Hospitality Experience</p>
             </div>

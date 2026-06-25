@@ -11570,33 +11570,28 @@ html {
   height: 100%;
 }
 
-.bg-gradient-primary-to-secondary {
-  background: linear-gradient(135deg, var(--bs-black), rgba(var(--bs-primary-rgb), 0.85), var(--bs-white));
-  background-size: 400% 400%, cover !important;
-  animation: gradient-move 7s ease infinite;
+.bg-gradient-primary-to-secondary1 {
+  background: linear-gradient(315deg, var(--bs-black), rgb(var(--bs-primary-rgb)), var(--bs-black));
+  background-size: 400% 400% !important;
 }
 
-@keyframes gradient-move {
-  0% {
-    background-position: 0% 0%, center center;
-  }
-  50% {
-    background-position: 100% 100%, center center;
-  }
-  100% {
-    background-position: 0% 0%, center center;
-  }
-}
 
 .bg-gradient-primary-to-secondary2 {
-  color: white;
-  border: 1px solid rgb(var(--bs-primary-rgb));
-  background: 
-    linear-gradient(135deg, rgba(var(--bs-primary-rgb), 0.85), var(--bs-black)),
-    url('../assets/hotel-lobby.jpg') no-repeat center center / cover !important;
-  
-  /* Both layers fit cleanly to the container (no 400% stretch needed) */
-  background-size: cover, cover !important;
+  background: linear-gradient(315deg, var(--bs-black), rgb(var(--bs-primary-rgb)), var(--bs-black));
+  background-size: 400% 400% !important;
+  animation: gradientShift 3s ease infinite !important;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 /* COLOR SELECTION */
