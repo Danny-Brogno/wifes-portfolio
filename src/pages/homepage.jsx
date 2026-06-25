@@ -123,8 +123,12 @@ export const HomePage = ({ currentPage, setCurrentPage }) => {
 
         {/* METRICS COUNTER GRID */}
         <div className="container px-5 mt-5" ref={metricsRef}>
-          <div className="text-center mb-4">
-            <h3 className="fw-bold text-uppercase tracking-wider small text-muted">Some of my numbers</h3>
+          <div className="text-center mb-5 mt-5">
+            <h2 className="display-5 fw-bolder">
+              <span className="text-gradient d-inline">
+                Some of my numbers
+              </span>
+            </h2>
           </div>
           <div className="row text-center bg-white p-4 rounded shadow-sm border">
             <div className="col-md-4 py-3">

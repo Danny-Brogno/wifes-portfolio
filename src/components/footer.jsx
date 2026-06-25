@@ -15,7 +15,19 @@ export const Footer = ({ currentPage, setCurrentPage }) => {
           
           <div className="col-auto">
             <div className="small m-0">
-              &copy; 2026 Danny Brogno. All Rights Reserved.
+              &copy; 2026 Majesca Maclan. All Rights Reserved.
+            </div>
+            <div id="creator">
+              <span>
+                Built with
+                &nbsp;
+                <i className="bi bi-heart-fill"></i>
+                &nbsp;
+                by &nbsp;
+                <a href="https://www.linkedin.com/in/danny-brogno/" target="blank_">
+                  Danny Brogno
+                </a>
+              </span>
             </div>
           </div>
           
