@@ -2,7 +2,7 @@ import React, { useEffect, useState, useRef } from 'react';
 import profileImg from '../assets/profile.png';
 
 // Fully fixed component to guarantee zero animation until viewport visibility flips
-const AnimatedCounter = ({ endValue, duration = 5000, suffix = "", startTrigger = false }) => {
+const AnimatedCounter = ({ endValue, duration = 4000, suffix = "", startTrigger = false }) => {
   const [count, setCount] = useState(0); // Start at 0 so it looks clean before animating
 
   useEffect(() => {
