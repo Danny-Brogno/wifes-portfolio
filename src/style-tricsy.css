@@ -11659,7 +11659,7 @@ html {
 
 /* COLOR SELECTION */
 .profile .dots-2 svg {
-  fill: rgb(var(--bs-primary-rgb));
+  fill: var(--bs-white);
 }
 
 .profile .dots-3 {
@@ -11683,7 +11683,7 @@ html {
 
 /* COLOR SELECTION */
 .profile .dots-4 svg {
-  fill: rgb(var(--bs-primary-rgb));
+  fill: var(--bs-white);
 }
 
 @media (min-width: 576px) {
