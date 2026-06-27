@@ -128,6 +128,31 @@ main header div.container .btn-outline-dark:hover {
   color: rgb(var(--bs-primary-rgb)) !important;
 }
 
+/* JUMBOTRON START */
+
+main .jumbotron .button-how-I-did-it {
+  color: var(--bs-white);
+  font-size: 1.5rem !important;
+  transition: 0.3s;
+}
+
+main .jumbotron .button-how-I-did-it:hover {
+  color: rgb(var(--bs-primary-rgb));
+  background-color: var(--bs-white);
+  border: 1px solid rgb(var(--bs-primary-rgb));
+}
+
+main .jumbotron .scrolling-number-container h2 {
+  color: rgb(var(--bs-primary-rgb));
+  font-size: 3rem;
+}
+
+main .jumbotron .scrolling-number-container p {
+  font-size: 1rem;
+}
+
+/* JUMBOTRON END */
+
 main section .under-jumbotron p.lead {
   font-size: 2rem;
   margin-top: 1.5rem;
@@ -158,13 +183,20 @@ main section .under-jumbotron p.text-muted {
   margin: 1.5rem 0rem;
 }
 
-
 main section .under-jumbotron .d-flex.justify-content-evenly {
   font-size: 3rem !important;
 }
 
 /* RESUME PAGE START */
 
+.resume-page #portfolio-highlights {
+  margin-top: 5rem;
+}
+
+.resume-page #portfolio-highlights h2 {
+  color: rgb(var(--bs-primary-rgb));
+  margin-bottom: 3rem;
+}
 
 
 /* RESUME PAGE END */

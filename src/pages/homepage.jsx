@@ -233,7 +233,7 @@ export const HomePage = ({ currentPage, setCurrentPage }) => {
         </header>
 
         {/* METRICS COUNTER GRID */}
-        <div className="container px-5 mt-5" ref={metricsRef}>
+        <div className="jumbotron container px-5 mt-5" ref={metricsRef}>
           <div className="text-center mb-5 mt-5">
             <h2 className="display-5 fw-bolder">
               <span className="text-gradient d-inline">
@@ -241,38 +241,36 @@ export const HomePage = ({ currentPage, setCurrentPage }) => {
               </span>
             </h2>
           </div>
-          <div className="row text-center bg-white p-4 rounded shadow-sm border">
+          <div className="row text-center bg-white p-4 rounded shadow-sm border scrolling-number-container">
             <div className="col-md-4 py-3">
-              <h2 className="display-4 fw-bold" style={{ color: '#722f37' }}>
+              <h2 className="display-4 fw-bold">
                 <AnimatedCounter endValue="45" suffix="%" startTrigger={animateMetrics} />
               </h2>
               <p className="text-muted text-uppercase small mb-0 fw-semibold">Revenue Growth Achieved</p>
             </div>
             <div className="col-md-4 py-3 border-start border-end">
-              <h2 className="display-4 fw-bold" style={{ color: '#722f37' }}>
+              <h2 className="display-4 fw-bold">
                 £2.5M+
               </h2>
               <p className="text-muted text-uppercase small mb-0 fw-semibold">Annual Budget Managed</p>
             </div>
             <div className="col-md-4 py-3">
-              <h2 className="display-4 fw-bold" style={{ color: '#722f37' }}>
+              <h2 className="display-4 fw-bold">
                 <AnimatedCounter endValue="15" suffix=" years" startTrigger={animateMetrics} />
               </h2>
               <p className="text-muted text-uppercase small mb-0 fw-semibold">Luxury Hospitality Experience</p>
             </div>
           </div>
+          <div className="text-center mt-5">
+            <button 
+              onClick={handleScrollToHighlights}
+              className="btn btn-primary btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder button-how-I-did-it"
+            >
+            See How I Managed These Budgets
+            </button>
+          </div>
         </div>
         
-        {/* FIXED ACTION BUTTON LINK TO VIEWPORT TARGET */}
-        <div className="text-center mt-4">
-          <button 
-            onClick={handleScrollToHighlights}
-            className="btn btn-outline-primary px-4 py-2 fw-semibold shadow-sm"
-            style={{ borderColor: 'rgb(132, 45, 62)', color: 'rgb(132, 45, 62)' }}
-          >
-            See How I Managed These Budgets <i className="bi bi-arrow-right ms-2"></i>
-          </button>
-        </div>
 
         {/* ABOUT ME SECTION */}
         <section ref={targetRef}>
