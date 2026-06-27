@@ -212,24 +212,26 @@ export const ResumePage = () => {
                 <div className="row align-items-center gx-5">
                   <div className="col-lg-4 text-center text-lg-start mb-4 mb-lg-0">
                     <div className="p-4 rounded-4">
-                      <div className="fw-bolder mb-2">OPERATIONAL PROOF</div>
-                      <div className="small fw-bold text-dark">Data-Driven Leadership Impact</div>
+                      <div className="fw-bolder mb-2 main-color">OPERATIONAL PROOF</div>
+                      <div className="small fw-bold">Data-Driven Leadership Impact</div>
                     </div>
                   </div>
                   <div className="col-lg-8">
                     <div className="mb-3">
-                      <strong className="d-block text-dark small text-uppercase mb-1">The Strategy & Execution</strong>
+                      <strong className="main-color d-block small text-uppercase mb-1">
+                        The Strategy & Execution
+                      </strong>
                       <p className="text-muted small mb-0">
                         Designed and deployed a dynamic resource allocation matrix across high-end properties. Re-negotiated vendor supply chain agreements, optimized operational workflows, and strategically funneled capital directly into premium guest experiences.
                       </p>
                     </div>
                     <div className="row mt-4 pt-3 border-top g-2 text-center text-lg-start">
                       <div className="col-6 col-md-4">
-                        <span className="d-block fs-3 fw-bold">+45%</span>
+                        <span className="main-color d-block fs-3 fw-bold">+45%</span>
                         <span className="text-muted small">Revenue Growth</span>
                       </div>
                       <div className="col-6 col-md-4 border-start">
-                        <span className="d-block fs-3 fw-bold">£2.5M+</span>
+                        <span className="main-color d-block fs-3 fw-bold">£2.5M+</span>
                         <span className="text-muted small">Annual Budget</span>
                       </div>
                     </div>

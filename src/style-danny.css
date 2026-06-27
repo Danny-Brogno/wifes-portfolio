@@ -1,3 +1,8 @@
+/* MY CLASSES */
+.main-color {
+  color: rgb(var(--bs-primary-rgb));
+}
+
 /* ALL PURPOSE CLASSES */
 a {
   text-decoration: none !important;
