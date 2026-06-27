@@ -290,7 +290,7 @@ export const HomePage = ({ currentPage, setCurrentPage }) => {
                   </p>
                   <p className="text-muted px-lg-5">
                     Rising from an event clerk to director of sales and marketing, I seamlessly lead sales and marketing teams.
-                    I personally engage clients and manage diverse vendors from premium catering to sound and lighting technicians—delivering top-tier results with elegance, professionalism, and genuine kindness.
+                    I personally engage clients and manage diverse vendors from premium catering to sound and lighting technicians delivering top-tier results with elegance, professionalism, and genuine kindness.
                   </p>
                   <div className="d-flex justify-content-evenly fs-2 gap-4 mt-4">
                     <a className="text-gradient" href="mailto:majesca.maclan@gmail.com">
