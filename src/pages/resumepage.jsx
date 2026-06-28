@@ -228,57 +228,88 @@ export const ResumePage = () => {
                     <div className="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3"><i className="bi bi-code-slash"></i></div>
                     <h3 className="fw-bolder mb-0"><span className="text-gradient d-inline">Languages</span></h3>
                   </div>
-                        <div className="row row-cols-1 row-cols-md-3 mb-4">
-                            <div className="col mb-4 mb-md-0"><div className="d-flex align-items-center bg-light rounded-4 p-3 h-100">HTML</div></div>
-                            <div className="col mb-4 mb-md-0"><div className="d-flex align-items-center bg-light rounded-4 p-3 h-100">CSS</div></div>
-                            <div className="col"><div className="d-flex align-items-center bg-light rounded-4 p-3 h-100">JavaScript</div></div>
-                        </div>
-                        <div className="row row-cols-1 row-cols-md-3">
-                            <div className="col mb-4 mb-md-0"><div className="d-flex align-items-center bg-light rounded-4 p-3 h-100">Python</div></div>
-                            <div className="col mb-4 mb-md-0"><div className="d-flex align-items-center bg-light rounded-4 p-3 h-100">Ruby</div></div>
-                            <div className="col"><div className="d-flex align-items-center bg-light rounded-4 p-3 h-100">Node.js</div></div>
-                        </div>
-                </div>
+                    <div className="row row-cols-1 row-cols-md-3 mb-4">
+                      <div className="col mb-4 mb-md-0"><div className="d-flex align-items-center bg-light rounded-4 p-3 h-100">HTML</div></div>
+                      <div className="col mb-4 mb-md-0"><div className="d-flex align-items-center bg-light rounded-4 p-3 h-100">CSS</div></div>
+                      <div className="col"><div className="d-flex align-items-center bg-light rounded-4 p-3 h-100">JavaScript</div></div>
+                    </div>
+                    <div className="row row-cols-1 row-cols-md-3">
+                      <div className="col mb-4 mb-md-0"><div className="d-flex align-items-center bg-light rounded-4 p-3 h-100">Python</div></div>
+                      <div className="col mb-4 mb-md-0"><div className="d-flex align-items-center bg-light rounded-4 p-3 h-100">Ruby</div></div>
+                      <div className="col"><div className="d-flex align-items-center bg-light rounded-4 p-3 h-100">Node.js</div></div>
+                    </div>
+                 </div>
                   
               </div>
             </div>
           </section>
 
-          {/* MOVED SECTION: PORTFOLIO METRICS PROOF AT THE VERY BOTTOM */}
-          <section ref={highlightsRef} id="portfolio-highlights">
-            <h2 className="fw-bold mb-3">
-              How did I manage these budgets?
-            </h2>
-            <div className="border-0 rounded-4 mb-5">
-              <div className="card-body p-5">
-                <div className="row align-items-center gx-5">
-                  <div className="col-lg-4 text-center text-lg-start mb-4 mb-lg-0">
-                    <div className="p-4 rounded-4">
-                      <div className="fw-bolder mb-2 main-color">OPERATIONAL PROOF</div>
-                      <div className="small fw-bold">Data-Driven Leadership Impact</div>
-                    </div>
-                  </div>
-                  <div className="col-lg-8">
-                    <div className="mb-3">
-                      <strong className="main-color d-block small text-uppercase mb-1">
-                        The Strategy & Execution
-                      </strong>
-                      <p className="text-muted small mb-0">
-                        Designed and deployed a dynamic resource allocation matrix across high-end properties. Re-negotiated vendor supply chain agreements, optimized operational workflows, and strategically funneled capital directly into premium guest experiences.
-                      </p>
-                    </div>
-                    <div className="row mt-4 pt-3 border-top g-2 text-center text-lg-start">
-                      <div className="col-6 col-md-4">
-                        <span className="main-color d-block fs-3 fw-bold">+45%</span>
-                        <span className="text-muted small">Revenue Growth</span>
-                      </div>
-                      <div className="col-6 col-md-4 border-start">
-                        <span className="main-color d-block fs-3 fw-bold">£2.5M+</span>
-                        <span className="text-muted small">Annual Budget</span>
-                      </div>
-                    </div>
+          {/* Interactive 50/50 Video Case Study Section */}
+          <section ref={highlightsRef} id="portfolio-highlights" className="py-5">
+            <div className="container px-0">
+              <div className="row g-5 align-items-center">
+                
+                {/* LEFT COLUMN: Video Presentation */}
+                <div className="col-lg-6">
+                  <div className="ratio ratio-16x9 shadow rounded-4 overflow-hidden bg-dark">
+                    {/* Replace src with her actual video link (e.g., Vimeo, YouTube, or hosted mp4) */}
+                    <iframe 
+                      src="https://www.youtube.com/embed/placeholder" 
+                      title="Majesca Maclan - Operational Strategy Presentation" 
+                      allowFullScreen
+                    ></iframe>
                   </div>
                 </div>
+
+                {/* RIGHT COLUMN: Alternative Metrics & Case Study Download */}
+                <div className="col-lg-6">
+                  <div className="mb-4">
+                    <span className="text-uppercase small fw-bold main-color d-block mb-1">
+                      Executive Case Study
+                    </span>
+                    <h2 className="fw-bold display-6">
+                      The Plaza Lodge Transformation
+                    </h2>
+                    <p className="text-muted">
+                      A look behind the numbers: how shifting from rigid budgets to an agile resource matrix unlocked record performance.
+                    </p>
+                  </div>
+
+                  {/* Re-contextualized Metrics (Described differently than the homepage) */}
+                  <div className="row g-4 mb-4">
+                    <div className="col-sm-6">
+                      <div className="p-3 bg-light rounded-4 h-100">
+                        <span className="h2 fw-bold main-color d-block mb-1">1.45x</span>
+                        <h3 className="h6 fw-bold text-uppercase mb-1">Commercial Lift</h3>
+                        <p className="text-muted small mb-0">
+                          Outperformed legacy year-over-year targets by scaling high-margin corporate bookings.
+                        </p>
+                      </div>
+                    </div>
+                    <div className="col-sm-6">
+                      <div className="p-3 bg-light rounded-4 h-100">
+                        <span className="h2 fw-bold main-color d-block mb-1">£2.5M+</span>
+                        <h3 className="h6 fw-bold text-uppercase mb-1">Capital Oversight</h3>
+                        <p className="text-muted small mb-0">
+                          Direct restructuring of vendor supply networks to maximize premium guest experiences.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Action Button: Download PDF Strategy */}
+                  <div className="d-grid d-sm-flex gap-3">
+                    <a 
+                      href="/path-to-your-case-study.pdf" 
+                      download="Majesca_Maclan_Operational_Strategy.pdf"
+                      className="btn btn-outline-dark px-4 py-3 fw-bold d-inline-flex align-items-center justify-content-center rounded-3 shadow-sm w-100 w-sm-auto"
+                    >
+                      <i className="bi bi-file-earmark-pdf me-2 fs-5"></i>
+                      Download Strategy PDF
+                    </a>
+                  </div>
+                </div>
+
               </div>
             </div>
           </section>
