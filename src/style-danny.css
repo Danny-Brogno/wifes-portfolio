@@ -102,7 +102,8 @@ main header div.container .btn-primary:hover,
    Normal: Burgundy background, White text
    Hover:  White background, Burgundy text
    ========================================================================== */
-main header div.container .btn-outline-dark {
+main header div.container .btn-outline-dark,
+.resume-page .btn-outline-dark {
   /* FORCE the default text color to be white */
   color: var(--bs-white) !important; 
   
@@ -129,7 +130,8 @@ main header div.container .btn-outline-dark {
 }
 
 /* Explicit Hover rule to ensure text turns Burgundy on hover */
-main header div.container .btn-outline-dark:hover {
+main header div.container .btn-outline-dark:hover,
+.resume-page .btn-outline-dark:hover {
   color: rgb(var(--bs-primary-rgb)) !important;
 }
 
@@ -193,11 +195,6 @@ main section .under-jumbotron .d-flex.justify-content-evenly {
 }
 
 /* RESUME PAGE START */
-
-.resume-page #portfolio-highlights .container .my-container {
-  margin-top:0 !important;
-}
-
 
 
 /* RESUME PAGE END */
@@ -484,6 +481,26 @@ footer ul.footer-list li:last-of-type {
   main section .under-jumbotron div.justify-content-evenly {
     justify-content: space-between !important;
   }
+  
+  /* RESUME PAGE START */
+  
+  .resume-page .my-flex-column {
+    flex-direction: column;
+  }
+  
+  .resume-page .my-flex-column h2.text-primary {
+    margin-bottom: 3rem !important;
+  }
+  
+  .resume-page h2.text-secondary {
+    text-align: center;
+  }
+  
+  .resume-page .no-padding-small {
+    padding:0 !important;
+  }
+  
+  /* RESUME PAGE END */
   
   footer .container .row {
     flex-direction: column;

@@ -29,7 +29,7 @@ export const ResumePage = () => {
       <div className="row gx-5 justify-content-center">
         <div className="col-lg-12 col-xl-12 col-xxl-12 col-md-12 col-sm-12">
           
-          <div className="d-flex align-items-center justify-content-between mb-4">
+          <div className="d-flex align-items-center justify-content-between mb-4 my-flex-column">
             <h2 className="text-primary fw-bolder mb-0">Experience</h2>
             <a className="btn btn-primary px-4 py-3" href="#!">
               <div className="d-inline-block bi bi-download me-2"></div>
@@ -246,6 +246,9 @@ export const ResumePage = () => {
 
           {/* Interactive 50/50 Video Case Study Section */}
           <section ref={highlightsRef} id="portfolio-highlights" className="py-5">
+            
+            <h2 className="text-secondary fw-bolder mb-5">How I manage budgets</h2>
+            
             <div className="container px-0">
               <div className="row g-5">
                 
@@ -277,7 +280,7 @@ export const ResumePage = () => {
 
                   {/* Re-contextualized Metrics */}
                   <div className="row g-4 mb-4">
-                    <div className="col-sm-6">
+                    <div className="col-sm-6 no-padding-small">
                       <div className="p-3 bg-light rounded-4 h-100">
                         <span className="h2 fw-bold main-color d-block mb-1">1.45x</span>
                         <h3 className="h6 fw-bold text-uppercase mb-1">Commercial Lift</h3>
@@ -286,7 +289,7 @@ export const ResumePage = () => {
                         </p>
                       </div>
                     </div>
-                    <div className="col-sm-6">
+                    <div className="col-sm-6 no-padding-small">
                       <div className="p-3 bg-light rounded-4 h-100">
                         <span className="h2 fw-bold main-color d-block mb-1">£2.5M+</span>
                         <h3 className="h6 fw-bold text-uppercase mb-1">Capital Oversight</h3>
@@ -302,7 +305,7 @@ export const ResumePage = () => {
                     <a 
                       href="/project-description.pdf" 
                       download="Majesca_Maclan_Operational_Strategy.pdf"
-                      className="btn btn-outline-dark px-4 py-3 fw-bold d-inline-flex align-items-center justify-content-center rounded-3 shadow-sm w-100 w-sm-auto"
+                      className="btn btn-outline-dark btn-lg px-5 py-3 fs-6 fw-bolder"
                     >
                       <i className="bi bi-file-earmark-pdf me-2 fs-5"></i>
                       Download Strategy PDF
