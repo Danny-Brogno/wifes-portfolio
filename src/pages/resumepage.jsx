@@ -247,16 +247,16 @@ export const ResumePage = () => {
           {/* Interactive 50/50 Video Case Study Section */}
           <section ref={highlightsRef} id="portfolio-highlights" className="py-5">
             <div className="container px-0">
-              <div className="row g-5 align-items-center">
+              <div className="row g-5">
                 
-                {/* LEFT COLUMN: Video Presentation */}
-                <div className="col-lg-6">
-                  <div className="ratio ratio-16x9 shadow rounded-4 overflow-hidden bg-dark">
-                    {/* Replace src with her actual video link (e.g., Vimeo, YouTube, or hosted mp4) */}
+                {/* LEFT COLUMN: Video Presentation (Now stretching full height) */}
+                <div className="col-lg-6 d-flex flex-column">
+                  <div className="shadow rounded-4 overflow-hidden bg-dark flex-grow-1 h-100 min-vh-25">
                     <iframe 
                       src="https://www.youtube.com/embed/Hr4PTaj25fI"
                       title="Your friendly English teacher" 
                       allowFullScreen
+                      className="w-100 h-100 border-0"
                     ></iframe>
                   </div>
                 </div>
@@ -275,7 +275,7 @@ export const ResumePage = () => {
                     </p>
                   </div>
 
-                  {/* Re-contextualized Metrics (Described differently than the homepage) */}
+                  {/* Re-contextualized Metrics */}
                   <div className="row g-4 mb-4">
                     <div className="col-sm-6">
                       <div className="p-3 bg-light rounded-4 h-100">
@@ -300,7 +300,7 @@ export const ResumePage = () => {
                   {/* Action Button: Download PDF Strategy */}
                   <div className="d-grid d-sm-flex gap-3">
                     <a 
-                      href="/path-to-your-case-study.pdf" 
+                      href="/project-description.pdf" 
                       download="Majesca_Maclan_Operational_Strategy.pdf"
                       className="btn btn-outline-dark px-4 py-3 fw-bold d-inline-flex align-items-center justify-content-center rounded-3 shadow-sm w-100 w-sm-auto"
                     >

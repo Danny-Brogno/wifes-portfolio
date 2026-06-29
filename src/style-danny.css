@@ -194,14 +194,10 @@ main section .under-jumbotron .d-flex.justify-content-evenly {
 
 /* RESUME PAGE START */
 
-.resume-page #portfolio-highlights {
-  margin-top: 5rem;
+.resume-page #portfolio-highlights .container .my-container {
+  margin-top:0 !important;
 }
 
-.resume-page #portfolio-highlights h2 {
-  color: rgb(var(--bs-primary-rgb));
-  margin-bottom: 3rem;
-}
 
 
 /* RESUME PAGE END */
