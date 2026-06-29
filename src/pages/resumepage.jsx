@@ -254,8 +254,8 @@ export const ResumePage = () => {
                   <div className="ratio ratio-16x9 shadow rounded-4 overflow-hidden bg-dark">
                     {/* Replace src with her actual video link (e.g., Vimeo, YouTube, or hosted mp4) */}
                     <iframe 
-                      src="https://www.youtube.com/embed/placeholder" 
-                      title="Majesca Maclan - Operational Strategy Presentation" 
+                      src="https://www.youtube.com/embed/Hr4PTaj25fI"
+                      title="Your friendly English teacher" 
                       allowFullScreen
                     ></iframe>
                   </div>
