@@ -182,6 +182,31 @@ export const ResumePage = () => {
               </div>
             </div>
             
+            {/* EXPERIENCE 6 */}
+            <div className="card shadow border-0 rounded-4 mb-5">
+              <div className="card-body p-5">
+                <div className="row align-items-center gx-5">
+                  <div className="col text-center text-lg-start mb-4 mb-lg-0">
+                    <div className="bg-light p-4 rounded-4">
+                      <div className="text-primary fw-bolder mb-2">12/2011 – 08/2015</div>
+                      <div className="small fw-bolder">Events Coordinator / Assistant</div>
+                      <div className="small text-muted">The Manor at Camp John Hay</div>
+                      <div className="small text-muted">Baguio City, Philippines</div>
+                    </div>
+                  </div>
+                  <ul className="col-lg-8">
+                    <li>
+                      Overall, in-charge for groups from 30 to 2,000 persons.
+                    </li>
+
+                    <li>
+                      Negotiated with suppliers and prepared timelines for multiple concurrent events.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            
           </section>
 
           <section>
@@ -194,19 +219,20 @@ export const ResumePage = () => {
                 <div className="row align-items-center gx-5">
                   <div className="col text-center text-lg-start mb-4 mb-lg-0">
                     <div className="bg-light p-4 rounded-4">
-                      <div className="text-secondary fw-bolder mb-2">2015 - 2017</div>
+                      <div className="text-secondary fw-bolder mb-2">2008 – 2012</div>
                       <div className="mb-2">
-                        <div className="small fw-bolder">Barnett College</div>
-                        <div className="small text-muted">Fairfield, NY</div>
+                        <div className="small fw-bolder">University of the Cordilleras,</div>
+                        <div className="small text-muted">Baguio City, Philippines</div>
                       </div>
                       <div className="fst-italic">
-                        <div className="small text-muted">Master's</div>
-                        <div className="small text-muted">Web Development</div>
+                        <div className="small text-muted">Bachelor of Science</div>
+                        <div className="small text-muted">Hotel and Restaurant Management</div>
                       </div>
                     </div>
                   </div>
                   <div className="col-lg-8">
-                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laudantium, voluptatem quis repellendus eaque sit animi illo ipsam amet officiis corporis sed aliquam non voluptate corrupti excepturi maxime porro fuga.</div>
+                    Earned a comprehensive degree focusing on hospitality operations, food service systems, and guest relations. 
+                    Developed core leadership, financial management, and communication skills vital for successfully managing premium international hospitality establishments.
                   </div>
                 </div>
               </div>
