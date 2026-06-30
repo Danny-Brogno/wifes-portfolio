@@ -45,57 +45,36 @@ export const ResumePage = () => {
                 <div className="row align-items-center gx-5">
                   <div className="col text-center text-lg-start mb-4 mb-lg-0">
                     <div className="bg-light p-4 rounded-4">
-                      <div className="text-primary fw-bolder mb-2">2019 - Present</div>
+                      <div className="text-primary fw-bolder mb-2">05/2022 – Present</div>
                       <div className="small fw-bolder">Sales and Marketing director</div>
                       <div className="small text-muted">The Plaza Lodge</div>
-                      <div className="small text-muted">Baguio, Philippines</div>
+                      <div className="small text-muted">Baguio City, Philippines</div>
                     </div>
                   </div>
-                  <div className="col-lg-8">
-                    <ul>
-                    
-                      <li>
-                        Prepare Sales Reports and Annual Sales &amp; Marketing Plans.
-                      </li>
+                  <ul className="col-lg-8">
+                    <li>
+                      Prepare Sales Reports and Annual Sales &amp; Marketing Plans.
+                    </li>
                       
-                      <li>
-                        Create effective sales programs to increase brand awareness and positive perception.
-                      </li>
+                    <li>
+                      Create effective sales programs to increase brand awareness and positive perception.
+                    </li>
                       
-                      <li>  
-                        Assist Managing Director in budgeting and strategic marketing within approved plans.
-                      </li>
+                    <li>  
+                      Assist Managing Director in budgeting and strategic marketing within approved plans.
+                    </li>
                       
-                      <li>
-                        Develop rates and deployment strategies through competitive data and demand analysis.
-                      </li>
+                    <li>
+                      Develop rates and deployment strategies through competitive data and demand analysis.
+                    </li>
                       
-                    </ul>
-                  </div>
+                  </ul>
                 </div>
               </div>
             </div>
+            
             
             {/* EXPERIENCE 2 */}
-            <div className="card shadow border-0 rounded-4 mb-5">
-              <div className="card-body p-5">
-                <div className="row align-items-center gx-5">
-                  <div className="col text-center text-lg-start mb-4 mb-lg-0">
-                    <div className="bg-light p-4 rounded-4">
-                      <div className="text-primary fw-bolder mb-2">2017 - 2019</div>
-                      <div className="small fw-bolder">PIZZA Specialist</div>
-                      <div className="small text-muted">Wayne Enterprises</div>
-                      <div className="small text-muted">Gotham City, NY</div>
-                    </div>
-                  </div>
-                  <div className="col-lg-8">
-                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laudantium, voluptatem quis repellendus eaque sit animi illo ipsam amet officiis corporis sed aliquam non voluptate corrupti excepturi maxime porro fuga.</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            {/* EXPERIENCE 3 */}
             <div className="card shadow border-0 rounded-4 mb-5">
               <div className="card-body p-5">
                 <div className="row align-items-center gx-5">
@@ -107,23 +86,48 @@ export const ResumePage = () => {
                       <div className="small text-muted">Baguio City, Philippines</div>
                     </div>
                   </div>
-                  <div className="col-lg-8">
-                    <ul>
-                    
-                      <li>
-                        Generated major accounts through face-to-face and telephone sales activities.
-                      </li>
+                  <ul className="col-lg-8">
+                    <li>
+                      Generated major accounts through face-to-face and telephone sales activities.
+                    </li>
+
+                    <li>
+                      Established sales objectives, action plans, and targets for the sales team.
+                    </li>
                       
-                      <li>
-                        Established sales objectives, action plans, and targets for the sales team.
-                      </li>
-                      
-                      <li>  
-                        Managed reactive and proactive group sales efforts to maximize revenue opportunities.
-                      </li>
-                      
-                    </ul>
+                    <li>  
+                      Managed reactive and proactive group sales efforts to maximize revenue opportunities.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            
+            {/* EXPERIENCE 3 */}
+            <div className="card shadow border-0 rounded-4 mb-5">
+              <div className="card-body p-5">
+                <div className="row align-items-center gx-5">
+                  <div className="col text-center text-lg-start mb-4 mb-lg-0">
+                    <div className="bg-light p-4 rounded-4">
+                      <div className="text-primary fw-bolder mb-2">05/2018 – 12/2020</div>
+                      <div className="small fw-bolder">Catering Sales Manager</div>
+                      <div className="small text-muted">The Plaza Lodge</div>
+                      <div className="small text-muted">Baguio City, Philippines</div>
+                    </div>
                   </div>
+                  <ul className="col-lg-8">
+                    <li>
+                      Traveled to promote the hotel and develop potential business generators.
+                    </li>
+
+                    <li>
+                      Prepared collateral materials and educated planners on hotel procedures.
+                    </li>
+                      
+                    <li>  
+                      Coordinated Banquet Event Orders, AV equipment, and billing specifications.
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -134,10 +138,10 @@ export const ResumePage = () => {
                 <div className="row align-items-center gx-5">
                   <div className="col text-center text-lg-start mb-4 mb-lg-0">
                     <div className="bg-light p-4 rounded-4">
-                      <div className="text-primary fw-bolder mb-2">2015 - 2016</div>
-                      <div className="small fw-bolder">Sperm Bank Receptionist</div>
-                      <div className="small text-muted">Fairy Pool forest</div>
-                      <div className="small text-muted">Isle of Skye, Scotland</div>
+                      <div className="text-primary fw-bolder mb-2">05/2017 – 05/2018</div>
+                      <div className="small fw-bolder">Conventions Manager</div>
+                      <div className="small text-muted">The Plaza Lodge</div>
+                      <div className="small text-muted">Baguio City, Philippines</div>
                     </div>
                   </div>
                   <div className="col-lg-8">
