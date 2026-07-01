@@ -73,16 +73,62 @@ export const ContactPage = () => {
   return (
     <section className="contact-page py-5">
       <div className="container px-5">
-        <div className="bg-light rounded-4 py-5 px-4 px-md-5">
+        <div className="bg-light rounded-4">
           <div className="text-center mb-5">
             <div className="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 mb-3">
               <i className="bi bi-envelope"></i>
             </div>
-            <h1 className="fw-bolder">Get in touch</h1>
+            <h1 className="fw-bolder text-gradient">Get in touch</h1>
             <p className="lead fw-normal text-muted mb-0">Let's work together!</p>
           </div>
+          
+          
+          {/* Contact Information Section - START*/}
+          <div className="row justify-content-center mt-5 mb-5">
+            <div className="col-lg-8 col-xl-8">
+              <div className="d-flex flex-column align-items-center gap-4">
+              
+                {/* Landline/Mobile Block */}
+                <div className="d-flex flex-column align-items-center">
+                  <p className="mb-2 fs-5">Call us on our mobile:</p>
+                  <a href="tel:+447849619283" className="text-decoration-none text-reset">
+                    <div className="d-flex align-items-center gap-3">
+                      <i className="bi bi-telephone-fill fs-3 phone-ring-anim"></i>
+                      <span className="fs-4 fw-normal">+44 784 9619 283</span>
+                    </div>
+                  </a>
+                </div>
+
+                {/* WhatsApp Block */}
+                <div className="d-flex flex-column align-items-center mt-3">
+                  <p className="mb-2 fs-5">Text us on WhatsApp:</p>
+                  <a href="https://wa.me/447849619283" target="_blank" rel="noreferrer" className="text-decoration-none text-reset">
+                    <div className="d-flex align-items-center gap-3">
+                      <i className="bi bi-whatsapp fs-3 whatsapp-pulse-anim"></i>
+                      <span className="fs-4 fw-normal">+44 784 9619 283</span>
+                    </div>
+                  </a>
+                </div>
+
+                {/* Email Block */}
+                <div className="d-flex flex-column align-items-center mt-3">
+                  <p className="mb-2 fs-5">Email us at the following email address:</p>
+                  <a href="mailto:majesca.maclan@gmail.com" className="text-decoration-none text-reset">
+                    <div className="d-flex align-items-center gap-3">
+                      <i className="bi bi-at fs-2 email-spin-anim"></i>
+                      <span className="fs-4 fw-normal">majesca.maclan@gmail.com</span>
+                    </div>
+                  </a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          {/* Contact Information Section - END*/}
+          
+          
           <div className="row gx-5 justify-content-center">
-            <div className="col-lg-8 col-xl-6">
+            <div className="col-lg-8 col-xl-8">
               <form id="contactForm" onSubmit={handleSubmit}>
                 
                 {/* Full Name Input */}

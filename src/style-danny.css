@@ -65,25 +65,27 @@ main header div.container .badge {
 
 /* ==========================================================================
    FIRST BUTTON: .btn-primary 
-   Normal: White background, Burgundy border
-   Hover:  Burgundy background, White text
+   Normal: Burgundy background, White text
+   Hover:  White background, Burgundy border & text
    ========================================================================== */
 main header div.container .btn-primary,
-.resume-page.container .btn-primary {
-  --bs-btn-color: rgb(var(--bs-primary-rgb)); /* Start with burgundy text */
-  --bs-btn-bg: var(--bs-white);                /* Start with white background */
-  --bs-btn-border-color: rgb(var(--bs-primary-rgb));
+.resume-page.container .btn-primary,
+.contact-page #submitButton {
+  /* Default State (No Hover) */
+  --bs-btn-color: var(--bs-white);                    /* White text */
+  --bs-btn-bg: rgb(var(--bs-primary-rgb));             /* Burgundy background */
+  --bs-btn-border-color: rgb(var(--bs-primary-rgb));   /* Burgundy border */
   
   /* Bootstrap Variable Hover states */
-  --bs-btn-hover-bg: rgb(var(--bs-primary-rgb));
-  --bs-btn-hover-border-color: var(--bs-white);
-  --bs-btn-hover-color: var(--bs-white);       /* Tells Bootstrap to make text white on hover */
+  --bs-btn-hover-bg: var(--bs-white);                  /* White background on hover */
+  --bs-btn-hover-border-color: rgb(var(--bs-primary-rgb)); /* Burgundy border on hover */
+  --bs-btn-hover-color: rgb(var(--bs-primary-rgb));    /* Burgundy text on hover */
 
   /* Active / Focus / Disabled defaults */
   --bs-btn-focus-shadow-rgb: 64, 79, 245;
-  --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #1826c2;
-  --bs-btn-active-border-color: #1724b6;
+  --bs-btn-active-color: var(--bs-white);
+  --bs-btn-active-bg: rgb(var(--bs-primary-rgb));
+  --bs-btn-active-border-color: rgb(var(--bs-primary-rgb));
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #fff;
   --bs-btn-disabled-bg: #1e30f3;
@@ -211,6 +213,86 @@ main section .under-jumbotron .d-flex.justify-content-evenly {
   
   /* 3. Override Bootstrap's blue glowing shadow (this is usually the culprit!) */
   box-shadow: 0 0 0 0.25rem rgba(var(--bs-primary-rgb), 0.25) !important;
+}
+
+/* ==========================================================================
+   1. PHONE ICON ANIMATION (Ringing Left & Right)
+   ========================================================================== */
+.bi.bi-telephone-fill {
+  animation-name: trin;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  display: inline-block;
+  color: rgb(var(--bs-primary-rgb));
+}
+
+@keyframes trin {
+  from {
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+  20%, 32%, 44%, 56%, 68% {
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+  23%, 35%, 47%, 59%, 71% {
+    transform: rotate3d(0, 0, 1, 15deg);
+  }
+  26%, 38%, 50%, 62%, 74% {
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+  29%, 41%, 53%, 65%, 77% {
+    transform: rotate3d(0, 0, 1, -15deg);
+  }
+  80% {
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+}
+
+/* ==========================================================================
+   2. WHATSAPP ICON ANIMATION (Pulsating Scale)
+   ========================================================================== */
+.bi.bi-whatsapp {
+  animation: grow 4s linear infinite;
+  transform-style: preserve-3d;
+  backface-visibility: visible;
+  display: inline-block;
+  color: rgb(var(--bs-primary-rgb));
+}
+
+@keyframes grow {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.3);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  75% {
+    transform: scale(1.3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* ==========================================================================
+   3. EMAIL ICON ANIMATION (Spinning Horizontally/Vertically around axis)
+   ========================================================================== */
+.bi.bi-at {
+  animation: spinHorizontal 3s linear infinite;
+  display: inline-block;
+  color: rgb(var(--bs-primary-rgb));
+}
+
+@keyframes spinHorizontal {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
 }
 
 /* CONTACT PAGE END */
