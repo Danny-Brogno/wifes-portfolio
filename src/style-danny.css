@@ -137,6 +137,16 @@ main header div.container .btn-outline-dark:hover,
   color: var(--bs-white) !important;
 }
 
+/* MY BUTTON RULES - START */
+.btn.btn-primary.btn-lg {
+  color: var(--bs-white) !important;
+}
+
+.btn.btn-primary.btn-lg:hover {
+  color: rgb(var(--bs-primary-rgb)) !important;
+}
+/* MU BUTTON RULES - END */
+
 /* JUMBOTRON START */
 
 main .jumbotron .button-how-I-did-it {
@@ -198,13 +208,8 @@ main section .under-jumbotron .d-flex.justify-content-evenly {
 
 /* RESUME PAGE START */
 
-.resume-page.container .btn.btn-primary.btn-lg {
-  color: var(--bs-white) !important;
-}
 
-.resume-page.container .btn.btn-primary.btn-lg:hover {
-  color: rgb(var(--bs-primary-rgb)) !important;
-}
+
 /* RESUME PAGE END */
 
 /* CONTACT PAGE START */
