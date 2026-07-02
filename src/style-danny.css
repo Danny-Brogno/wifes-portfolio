@@ -72,14 +72,14 @@ main header div.container .btn-primary,
 .resume-page.container .btn-primary,
 .contact-page #submitButton {
   /* Default State (No Hover) */
-  --bs-btn-color: var(--bs-white);                    /* White text */
-  --bs-btn-bg: rgb(var(--bs-primary-rgb));             /* Burgundy background */
-  --bs-btn-border-color: rgb(var(--bs-primary-rgb));   /* Burgundy border */
+  --bs-btn-color: var(--bs-white);                         /* White text */
+  --bs-btn-bg: rgb(var(--bs-primary-rgb));                  /* Burgundy background */
+  --bs-btn-border-color: rgb(var(--bs-primary-rgb));        /* Burgundy border */
   
   /* Bootstrap Variable Hover states */
-  --bs-btn-hover-bg: var(--bs-white);                  /* White background on hover */
-  --bs-btn-hover-border-color: rgb(var(--bs-primary-rgb)); /* Burgundy border on hover */
-  --bs-btn-hover-color: rgb(var(--bs-primary-rgb));    /* Burgundy text on hover */
+  --bs-btn-hover-bg: var(--bs-white);                       /* White background on hover */
+  --bs-btn-hover-border-color: rgb(var(--bs-primary-rgb));  /* Burgundy border on hover */
+  --bs-btn-hover-color: rgb(var(--bs-primary-rgb));         /* Burgundy text on hover */
 
   /* Active / Focus / Disabled defaults */
   --bs-btn-focus-shadow-rgb: 64, 79, 245;
@@ -92,33 +92,33 @@ main header div.container .btn-primary,
   --bs-btn-disabled-border-color: #1e30f3;
 }
 
-/* Explicit Hover rule to ensure text stays white */
+/* Explicit Hover rule: Changed from white to Burgundy color so text is visible on hover */
 main header div.container .btn-primary:hover,
 .resume-page.container .btn-primary:hover {
-  color: var(--bs-white) !important;
+  color: rgb(var(--bs-primary-rgb)) !important;
 }
 
 
 /* ==========================================================================
    SECOND BUTTON: .btn-outline-dark
-   Normal: Burgundy background, White text
-   Hover:  White background, Burgundy text
+   Normal: White background, Burgundy border & text
+   Hover:  Burgundy background, White text
    ========================================================================== */
 main header div.container .btn-outline-dark,
 .resume-page .btn-outline-dark {
-  /* FORCE the default text color to be white */
-  color: var(--bs-white) !important;
+  /* FORCE the default text color to be main color */
+  color: rgb(var(--bs-primary-rgb)) !important;
   font-weight: bold;
   
   /* Default background setup */
-  --bs-btn-bg: rgb(var(--bs-primary-rgb));       /* Burgundy background */
-  --bs-btn-color: var(--bs-white);               /* (Fallback variable) */
-  --bs-btn-border-color: rgb(var(--bs-primary-rgb));
+  --bs-btn-bg: var(--bs-white);                            /* White background */
+  --bs-btn-border-color: rgb(var(--bs-primary-rgb));        /* Burgundy border */
   
-  /* Hover State: Flips to White background with Burgundy text */
-  --bs-btn-hover-bg: var(--bs-white);/* White hover background */
+  /* Hover State: Flips to Burgundy background with White text */
+  --bs-btn-hover-bg: rgb(var(--bs-primary-rgb));            /* Burgundy hover background */
   --bs-btn-hover-border-color: rgb(var(--bs-primary-rgb));
-  --bs-btn-hover-color: rgb(var(--bs-primary-rgb));/* Burgundy hover text */
+  --bs-btn-hover-color: var(--bs-white);                   /* White hover text */
+  
   /* Active / Focus / Disabled defaults */
   --bs-btn-focus-shadow-rgb: 33, 37, 41;
   --bs-btn-active-color: #fff;
@@ -131,10 +131,10 @@ main header div.container .btn-outline-dark,
   --bs-gradient: none;
 }
 
-/* Explicit Hover rule to ensure text turns Burgundy on hover */
+/* Explicit Hover rule to ensure text flips smoothly to white on hover */
 main header div.container .btn-outline-dark:hover,
 .resume-page .btn-outline-dark:hover {
-  color: rgb(var(--bs-primary-rgb)) !important;
+  color: var(--bs-white) !important;
 }
 
 /* JUMBOTRON START */
@@ -198,7 +198,13 @@ main section .under-jumbotron .d-flex.justify-content-evenly {
 
 /* RESUME PAGE START */
 
+.resume-page.container .btn.btn-primary.btn-lg {
+  color: var(--bs-white) !important;
+}
 
+.resume-page.container .btn.btn-primary.btn-lg:hover {
+  color: rgb(var(--bs-primary-rgb)) !important;
+}
 /* RESUME PAGE END */
 
 /* CONTACT PAGE START */

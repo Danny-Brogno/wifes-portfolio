@@ -31,7 +31,7 @@ export const ResumePage = () => {
           
           <div className="d-flex align-items-center justify-content-between mb-5 my-flex-column">
             <h2 className="text-primary fw-bolder mb-0">Experience</h2>
-            <a className="btn btn-outline-dark px-4 py-3" href="#!">
+            <a className="btn btn-primary btn-lg px-4 py-3" href="#!">
               <div className="d-inline-block bi bi-download me-2"></div>
               Download Resume
             </a>

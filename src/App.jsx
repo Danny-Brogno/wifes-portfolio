@@ -52,6 +52,7 @@ function App() {
         
         {/* FOOTER IS IN ALL PAGES */}
         <Footer setCurrentPage={setCurrentPage} currentPage={currentPage}/>
+        
       </div>
     )
 }
