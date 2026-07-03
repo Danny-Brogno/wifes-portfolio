@@ -76,7 +76,7 @@ export const ContactPage = () => {
         <div className="bg-light rounded-4">
           <div className="text-center mb-5">
             <div className="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 mb-3">
-              <i className="bi bi-envelope"></i>
+              <i className="bi bi-envelope-at"></i>
             </div>
             <h1 className="fw-bolder text-gradient">Get in touch</h1>
             <p className="lead fw-normal text-muted mb-0">Let's work together!</p>
@@ -93,7 +93,7 @@ export const ContactPage = () => {
                   <p className="mb-2 fs-5">Call us on our mobile:</p>
                   <a href="tel:+447849619283" className="text-decoration-none text-reset">
                     <div className="d-flex align-items-center gap-3">
-                      <i className="bi bi-telephone-fill fs-3 phone-ring-anim"></i>
+                      <i className="bi bi-telephone-fill fs-3"></i>
                       <span className="fs-4 fw-normal">+44 784 9619 283</span>
                     </div>
                   </a>
@@ -104,7 +104,7 @@ export const ContactPage = () => {
                   <p className="mb-2 fs-5">Text us on WhatsApp:</p>
                   <a href="https://wa.me/447849619283" target="_blank" rel="noreferrer" className="text-decoration-none text-reset">
                     <div className="d-flex align-items-center gap-3">
-                      <i className="bi bi-whatsapp fs-3 whatsapp-pulse-anim"></i>
+                      <i className="bi bi-whatsapp fs-3"></i>
                       <span className="fs-4 fw-normal">+44 784 9619 283</span>
                     </div>
                   </a>
@@ -115,7 +115,7 @@ export const ContactPage = () => {
                   <p className="mb-2 fs-5">Email us at the following email address:</p>
                   <a href="mailto:majesca.maclan@gmail.com" className="text-decoration-none text-reset">
                     <div className="d-flex align-items-center gap-3">
-                      <i className="bi bi-at fs-2 email-spin-anim"></i>
+                      <i className="bi bi-envelope second fs-2"></i>
                       <span className="fs-4 fw-normal">majesca.maclan@gmail.com</span>
                     </div>
                   </a>
@@ -132,7 +132,7 @@ export const ContactPage = () => {
 
               <div className="text-center mb-5 mt-5">
                 <div className="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 mb-3">
-                  <i class="bi bi-chat-dots"></i>
+                  <i className="bi bi-chat-dots"></i>
                 </div>
                 <h1 className="fw-bolder text-gradient">Or send us a message</h1>
                 <p className="lead fw-normal text-muted mb-0">By filling up the form</p>

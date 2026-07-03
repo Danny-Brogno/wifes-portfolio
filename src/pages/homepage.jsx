@@ -292,7 +292,7 @@ export const HomePage = ({ currentPage, setCurrentPage }) => {
                   </p>
                   <div className="d-flex justify-content-evenly fs-2 gap-4 mt-4">
                     <a className="text-gradient" href="mailto:majesca.maclan@gmail.com">
-                      <i className="bi bi-at"></i>
+                      <i className="bi bi-envelope"></i>
                     </a>
                     <a className="text-gradient" href="https://www.linkedin.com/in/majesca-m-6a9050165/" target="_blank" rel="noreferrer">
                       <i className="bi bi-linkedin"></i>
