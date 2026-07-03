@@ -21,7 +21,7 @@ export const Footer = ({ currentPage, setCurrentPage }) => {
               <span>
                 Built with
                 &nbsp;
-                <i className="bi bi-heart-fill"></i>
+                <i className="bi bi-heart-fill text-danger"></i>
                 &nbsp;
                 by &nbsp;
                 <a href="https://www.linkedin.com/in/danny-brogno/" target="blank_">

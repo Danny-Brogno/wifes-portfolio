@@ -362,17 +362,18 @@ export const ResumePage = () => {
             <div className="container px-0">
               <div className="row g-5">
                 
-                {/* LEFT COLUMN: Video Presentation (Now stretching full height) */}
-                <div className="col-lg-6 d-flex flex-column">
-                  <div className="shadow rounded-4 overflow-hidden bg-dark flex-grow-1 h-100 min-vh-25">
-                    <iframe 
-                      src="https://www.youtube.com/embed/Hr4PTaj25fI"
-                      title="Your friendly English teacher" 
-                      allowFullScreen
-                      className="w-100 h-100 border-0"
-                    ></iframe>
-                  </div>
+              {/* LEFT COLUMN: Video Presentation (Now stretching full height) */}
+              <div className="col-lg-6 d-flex flex-column">
+                <div className="shadow rounded-4 overflow-hidden bg-dark flex-grow-1 h-100 min-vh-25">
+                  <iframe 
+                    src="https://www.youtube.com/embed/jKI93UjPdxg"
+                    title="Majesca Maclan | Director of Sales and Marketing - Executive Video Introduction" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen
+                    className="w-100 h-100 border-0"
+                  ></iframe>
                 </div>
+              </div>
 
                 {/* RIGHT COLUMN: Alternative Metrics & Case Study Download */}
                 <div className="col-lg-6">
