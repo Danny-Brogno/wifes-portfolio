@@ -4,6 +4,26 @@ body {
   -moz-osx-font-smoothing: grayscale !important; /* For Firefox */
 }
 
+body::-webkit-scrollbar {
+  width: 15px;
+}
+
+body::-webkit-scrollbar-track {
+  background: linear-gradient(315deg, var(--bs-black), rgb(var(--bs-primary-rgb)), var(--bs-black));
+  background: rgb(var(--bs-primary-rgb));
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--bs-black);
+  transition:0.5s;
+  border: 2px solid rgb(var(--bs-primary-rgb));
+  border-radius: 20px;
+}
+
+/* body::-webkit-scrollbar-thumb:hover {
+  
+} */
+
 /* MY CLASSES */
 .main-color {
   color: rgb(var(--bs-primary-rgb));
