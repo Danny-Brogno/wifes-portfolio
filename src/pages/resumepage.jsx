@@ -39,9 +39,15 @@ export const ResumePage = () => {
 
             <div className="d-flex align-items-center justify-content-between mb-5 my-flex-column">
               <h2 className="text-primary fw-bolder mb-0">Experience</h2>
-              <a className="btn btn-primary btn-lg px-4 py-3" href="#!">
-                <div className="d-inline-block bi bi-download me-2"></div>
-                Download Resume
+              <a 
+                className="btn btn-primary btn-lg px-4 py-3"
+                href="/CV-Majesca Maclan.pdf" 
+                target="_blank" 
+                rel="noopener noreferrer"
+
+              >
+                <i className="d-inline-block bi bi-download me-2"></i>
+                Download CV
               </a>
             </div>
 
