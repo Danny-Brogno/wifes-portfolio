@@ -762,7 +762,7 @@ footer ul.footer-list li:last-of-type {
   
   /* This scales down the baseline rem units safely across ALL views in Chrome */
   html {
-    font-size: 90% !important; 
+    font-size: 80% !important; 
   }
 
   *,

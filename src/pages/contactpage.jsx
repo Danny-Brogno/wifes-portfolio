@@ -141,7 +141,7 @@ export const ContactPage = () => {
               
                 {/* Landline/Mobile Block */}
                 <div className="d-flex flex-column align-items-center">
-                  <p className="mb-2 fs-5">Call us on our mobile:</p>
+                  <p className="mb-2 fs-5">Call me on my mobile:</p>
                   <a href="tel:+447849619283" className="text-decoration-none text-reset">
                     <div className="d-flex align-items-center gap-3">
                       <i className="bi bi-telephone-fill fs-3"></i>
@@ -152,7 +152,7 @@ export const ContactPage = () => {
 
                 {/* WhatsApp Block */}
                 <div className="d-flex flex-column align-items-center mt-3">
-                  <p className="mb-2 fs-5">Text us on WhatsApp:</p>
+                  <p className="mb-2 fs-5">Text me on WhatsApp:</p>
                   <a href="https://wa.me/447849619283" target="_blank" rel="noreferrer" className="text-decoration-none text-reset">
                     <div className="d-flex align-items-center gap-3">
                       <i className="bi bi-whatsapp fs-3"></i>
@@ -163,7 +163,7 @@ export const ContactPage = () => {
 
                 {/* Email Block */}
                 <div className="d-flex flex-column align-items-center mt-3">
-                  <p className="mb-2 fs-5">Email us at the following email address:</p>
+                  <p className="mb-2 fs-5">Email me at the following email address:</p>
                   <a href="mailto:majesca.maclan@gmail.com" className="text-decoration-none text-reset">
                     <div className="d-flex align-items-center gap-3">
                       <i className="bi bi-envelope second fs-2"></i>
@@ -183,7 +183,7 @@ export const ContactPage = () => {
                 <div className="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 mb-3">
                   <i className="bi bi-chat-dots"></i>
                 </div>
-                <h1 className="fw-bolder text-gradient">Or send us a message</h1>
+                <h1 className="fw-bolder text-gradient">Or send me a message</h1>
                 <p className="lead fw-normal text-muted mb-0">By filling up the form</p>
               </div>
               
