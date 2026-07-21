@@ -4,11 +4,11 @@ import { Link } from 'react-router-dom'; // Imported Link
 // Removed props since we don't need state anymore
 export const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light py-3">
+    <nav className="navbar navbar-expand-lg navbar-light bg-light py-4">
       <div className="container px-5">
         {/* Changed to flex-column on mobile, resets back to row on large lg desktops */}
         <div className="d-flex flex-column align-items-flex-start d-lg-contents w-100">
-          <span className="navbar-brand m-0">
+          <span className="navbar-brand m-0 p-0">
             {/* Swapped to a Link tag for the logo */}
             <Link 
               className="fw-bolder text-primary cursor-pointer title text-decoration-none"
