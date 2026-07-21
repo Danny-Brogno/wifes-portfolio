@@ -84,18 +84,6 @@ nav.navbar div.container div#navbarSupportedContent ul.navbar-nav li:hover {
   border-bottom: 2px solid rgba(var(--bs-primary-rgb), 0.8) !important;
 }
 
-/* Active link state matching hover effect */
-nav.navbar div.container div#navbarSupportedContent ul.navbar-nav li a.active,
-nav.navbar div.container div#navbarSupportedContent ul.navbar-nav li.active {
-  border-bottom: 2px solid rgba(var(--bs-primary-rgb), 0.8) !important;
-}
-
-nav.navbar div.container div#navbarSupportedContent ul.navbar-nav li:focus-within,
-nav.navbar div.container div#navbarSupportedContent ul.navbar-nav li a:focus-visible {
-  border-bottom: 2px solid rgba(var(--bs-primary-rgb), 0.8) !important;
-  outline: none;
-}
-
 /* MAIN */
 main header div.container .badge {
   font-size: 1.4rem;
@@ -641,6 +629,7 @@ footer ul.footer-list li:last-of-type {
     padding:0;
     padding-bottom: 1rem;
     font-size: 1.5rem;
+    border: none !important;
   }
   
   main header div.container .badge {
