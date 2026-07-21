@@ -5,7 +5,7 @@
       "type": "httpTrigger",
       "direction": "in",
       "name": "req",
-      "methods": ["POST"],
+      "methods": ["post"],
       "route": "contact"
     },
     {
