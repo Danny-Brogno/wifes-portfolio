@@ -82,7 +82,8 @@ nav.navbar div.container div#navbarSupportedContent ul.navbar-nav li:last-of-typ
 
 nav.navbar div.container div#navbarSupportedContent ul.navbar-nav li a {
   padding: 0;
-  padding-bottom: 0.5rem;
+  padding-bottom: 1rem;
+  font-size: 1.5rem;
 }
 
 nav.navbar div.container div#navbarSupportedContent ul.navbar-nav li:hover {
@@ -341,6 +342,103 @@ main section .under-jumbotron .d-flex.justify-content-evenly {
   }
 }
 
+/* ==========================================================================
+   CUSTOM POP-UP MODAL STYLES (AZURE / CONTACT PAGE)
+   ========================================================================== */
+
+/* Darkened background overlay covering the entire screen */
+.custom-modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7); /* Softened dark overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99999; /* Higher z-index to overlay navigation bars & sticky headers */
+  animation: fadeInModal 0.2s ease-out;
+}
+
+/* Modal window container */
+.custom-modal-box {
+  background-color: var(--bs-white, #ffffff);
+  border-radius: var(--bs-border-radius-xl, 1rem);
+  width: 90%;
+  max-width: 500px;
+  overflow: hidden;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.4);
+  font-family: var(--bs-body-font-family, inherit);
+  border: 2px solid rgb(var(--bs-primary-rgb, 132, 45, 62));
+  animation: slideDownModal 0.25s ease-out;
+}
+
+/* Modal header layout */
+.custom-modal-header {
+  padding: 1.25rem 1.5rem;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Success theme header background (Burgundy gradient matching site palette) */
+/* Error theme header background */
+.custom-modal-header.bg-success-theme,
+.custom-modal-header.bg-danger-theme {
+  background: linear-gradient(315deg, var(--bs-black), rgb(var(--bs-primary-rgb)), var(--bs-black));
+  background-size: 400% 400% !important;
+}
+
+/* Modal close button ('X') */
+.custom-modal-close {
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  font-size: 2rem;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0;
+  transition: opacity 0.15s ease-in-out;
+}
+
+.custom-modal-close:hover {
+  opacity: 0.75;
+}
+
+/* Modal text body content */
+.custom-modal-body {
+  padding: 1.75rem 1.5rem;
+  color: var(--bs-body-color, #212529);
+}
+
+/* Modal action footer */
+.custom-modal-footer {
+  padding: 1rem 1.5rem;
+  background-color: var(--bs-light, #f8f9fa);
+  display: flex;
+  justify-content: flex-end;
+  border-top: 1px solid var(--bs-border-color, #dee2e6);
+}
+
+/* Smooth Entrance Animations */
+@keyframes fadeInModal {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideDownModal {
+  from { 
+    opacity: 0;
+    transform: translateY(-25px); 
+  }
+  to { 
+    opacity: 1;
+    transform: translateY(0); 
+  }
+}
+
 /* CONTACT PAGE END */
 
 /* FOOTER */
@@ -535,6 +633,7 @@ footer ul.footer-list li:last-of-type {
   nav.navbar div.container div#navbarSupportedContent ul.navbar-nav li {
     margin:0;
     padding:0;
+    font-size: 1.5rem;
   }
   
   main header div.container .badge {
@@ -584,6 +683,14 @@ footer ul.footer-list li:last-of-type {
   
   /* RESUME PAGE END */
   
+  /* CONTACT PAGE START */
+  
+  div.d-flex.flex-column.align-items-center.mt-3 {
+    text-align: center;
+  }
+  
+  /* CONTACT PAGE END */
+  
   footer .container .row {
     flex-direction: column;
   }
@@ -607,7 +714,7 @@ footer ul.footer-list li:last-of-type {
   footer ul.footer-list li {
     padding: 0;
     margin: 0;
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   
   footer ul.footer-list li:nth-child(2) {

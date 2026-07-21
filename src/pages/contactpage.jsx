@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from 'react';
 
 export const ContactPage = () => {
-  
   useEffect(() => {
     document.title = "Majesca Maclan | Contact page";
   }, []);
 
-  // Track the raw input values inside a local state object
+  // Track raw input values inside local state
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -14,67 +13,117 @@ export const ContactPage = () => {
     message: ''
   });
 
-  const [status, setStatus] = useState(null); // 'success' or 'error'
+  // Modal Display State Management
+  const [showModal, setShowModal] = useState(false);
+  const [modalConfig, setModalConfig] = useState({ 
+    title: '', 
+    message: '', 
+    isSuccess: true 
+  });
 
-  // Update specific properties instantly as the user types
+  // Update form values as user types
   const handleChange = (e) => {
-    // Identify the field safely using id or fallback name attribute
     const targetKey = e.target.id || e.target.name;
-
     setFormData({
       ...formData,
       [targetKey]: e.target.value
     });
-
-    // If an error is showing and the user changes or clears fields, remove the alert banner
-    if (status) {
-      setStatus(null);
-    }
   };
 
-  // Comprehensive validation requirements check logic
-  // 1. Phone numbers must contain only digits and be between 7 and 15 characters long
-  const isPhoneValid = /^[0-9]{7,15}$/.test(formData.phone.trim());
-  // 2. Message block must be at least 20 characters long
+  // Validation rules:
+  // 1. Phone numbers: allow optional '+' prefix followed by 7-15 digits
+  const cleanedPhone = formData.phone.trim().replace(/\s+/g, '');
+  const isPhoneValid = /^\+?[0-9]{7,15}$/.test(cleanedPhone);
+  
+  // 2. Message: minimum 20 characters
   const isMessageValid = formData.message.trim().length >= 20;
-  // 3. Name and Email cannot be empty spaces
+  
+  // 3. Name & Email validation
   const isNameValid = formData.name.trim() !== '';
   const isEmailValid = formData.email.trim() !== '' && formData.email.includes('@');
 
-  // Master conditional layout check tracking rule
+  // Master validation state
   const isFormValid = isNameValid && isEmailValid && isPhoneValid && isMessageValid;
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setStatus(null);
 
-    // Safety guard step to ensure form doesn't send broken metrics manually
     if (!isFormValid) {
-      setStatus('error');
+      setModalConfig({
+        title: 'Validation Error',
+        message: 'Please check your entries. Make sure your phone number contains 7–15 digits and your message is at least 20 characters.',
+        isSuccess: false
+      });
+      setShowModal(true);
       return;
     }
 
     try {
-      // Connects to your live API Gateway endpoint
-      const response = await fetch('https://xyz123.execute-api.amazonaws.com/contact', {
+      // Azure Static Web Apps Route for managed API Functions: /api/contact
+      const response = await fetch('/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData)
+        body: JSON.stringify({
+          ...formData,
+          phone: cleanedPhone
+        })
       });
 
       if (response.ok) {
-        setStatus('success');
-        setFormData({ name: '', email: '', phone: '', message: '' }); // Clear layout values
+        setModalConfig({
+          title: 'Success!',
+          message: 'Form submission successful! Message sent to Majesca.',
+          isSuccess: true
+        });
+        setShowModal(true);
+        // Clear form values
+        setFormData({ name: '', email: '', phone: '', message: '' });
       } else {
-        setStatus('error');
+        throw new Error('Azure API return non-200 code');
       }
     } catch (err) {
-      setStatus('error');
+      setModalConfig({
+        title: 'Submission Error',
+        message: 'Unable to process your request at this moment. Please try again later or contact us directly via email.',
+        isSuccess: false
+      });
+      setShowModal(true);
     }
   };
 
   return (
     <section className="contact-page py-5">
+      {/* ==================== POP-UP MODAL OVERLAY ==================== */}
+      {showModal && (
+        <div className="custom-modal-backdrop" onClick={() => setShowModal(false)}>
+          <div className="custom-modal-box" onClick={(e) => e.stopPropagation()}>
+            <div className={`custom-modal-header ${modalConfig.isSuccess ? 'bg-success-theme' : 'bg-danger-theme'}`}>
+              <h4 className="m-0 fw-bold">{modalConfig.title}</h4>
+              <button 
+                type="button" 
+                className="custom-modal-close" 
+                onClick={() => setShowModal(false)} 
+                aria-label="Close"
+              >
+                &times;
+              </button>
+            </div>
+            <div className="custom-modal-body">
+              <p className="fs-5 mb-0">{modalConfig.message}</p>
+            </div>
+            <div className="custom-modal-footer">
+              <button 
+                type="button" 
+                className="btn btn-primary btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder" 
+                onClick={() => setShowModal(false)}
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
       <div className="container px-5">
         <div className="bg-light rounded-4">
           <div className="text-center mb-5">
@@ -85,7 +134,7 @@ export const ContactPage = () => {
             <p className="lead fw-normal text-muted mb-0">Let's work together!</p>
           </div>
           
-          {/* Contact Information Section - START*/}
+          {/* Contact Information Section */}
           <div className="row justify-content-center mt-5 mb-5">
             <div className="col-lg-8 col-xl-8">
               <div className="d-flex flex-column align-items-center gap-4">
@@ -126,7 +175,6 @@ export const ContactPage = () => {
               </div>
             </div>
           </div>
-          {/* Contact Information Section - END*/}
           
           <div className="row gx-5 justify-content-center mt-5">
             <div className="col-lg-8 col-xl-8">
@@ -208,21 +256,7 @@ export const ContactPage = () => {
                   Current count: {formData.message.length}
                 </div>
 
-                {/* Status Messages Banner Elements */}
-                {status === 'success' && (
-                  <div className="text-center mb-3 text-success fw-bolder">
-                    Form submission successful! Message sent to Majesca.
-                  </div>
-                )}
-
-                {/* Error Banner Elements */}
-                {status === 'error' && (
-                  <div className="text-center text-danger mb-3 fw-bolder">
-                    Please check your entries and make sure all constraints match formatting rules.
-                  </div>
-                )}
-
-                {/* Button dynamically evaluates validation properties to apply colors */}
+                {/* Submit Button */}
                 <div className="d-grid">
                   <button 
                     className={`btn btn-primary btn-lg ${!isFormValid ? 'disabled' : ''}`} 
