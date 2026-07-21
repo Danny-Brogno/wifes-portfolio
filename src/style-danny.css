@@ -20,10 +20,6 @@ html::-webkit-scrollbar-thumb {
   border-radius: 20px;
 }
 
-/* body::-webkit-scrollbar-thumb:hover {
-  
-} */
-
 /* MY CLASSES */
 .main-color {
   color: rgb(var(--bs-primary-rgb));
@@ -66,7 +62,7 @@ nav.navbar div.container div:first-of-type a span {
 nav.navbar div.container div#navbarSupportedContent ul.navbar-nav {
   font-size: 1.4rem;
   --bs-text-opacity: 1;
-  color: var(--bs-black), var(--bs-text-opacity)) !important;
+  color: var(--bs-black) !important;
 }
 
 nav.navbar div.container div#navbarSupportedContent ul.navbar-nav li {
@@ -85,7 +81,19 @@ nav.navbar div.container div#navbarSupportedContent ul.navbar-nav li a {
 }
 
 nav.navbar div.container div#navbarSupportedContent ul.navbar-nav li:hover {
-  border-bottom: 2px solid rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
+  border-bottom: 2px solid rgba(var(--bs-primary-rgb), 0.8) !important;
+}
+
+/* Active link state matching hover effect */
+nav.navbar div.container div#navbarSupportedContent ul.navbar-nav li a.active,
+nav.navbar div.container div#navbarSupportedContent ul.navbar-nav li.active {
+  border-bottom: 2px solid rgba(var(--bs-primary-rgb), 0.8) !important;
+}
+
+nav.navbar div.container div#navbarSupportedContent ul.navbar-nav li:focus-within,
+nav.navbar div.container div#navbarSupportedContent ul.navbar-nav li a:focus-visible {
+  border-bottom: 2px solid rgba(var(--bs-primary-rgb), 0.8) !important;
+  outline: none;
 }
 
 /* MAIN */

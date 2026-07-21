@@ -385,7 +385,7 @@ export const ResumePage = () => {
                       </div>
                       <div className="col-sm-6 no-padding-small">
                         <div className="p-3 bg-light rounded-4 h-100">
-                          <span className="h2 fw-bold main-color d-block mb-1">£2.5M+</span>
+                          <span className="h2 fw-bold main-color d-block mb-1">₱100M+</span>
                           <h3 className="h6 fw-bold text-uppercase mb-1">Capital Oversight</h3>
                           <p className="text-muted small mb-0">
                             Direct restructuring of vendor supply networks to maximize premium guest experiences.
@@ -397,9 +397,9 @@ export const ResumePage = () => {
                     {/* Action Button: Download PDF Strategy */}
                     <div className="d-grid d-sm-flex gap-3">
                       <a 
-                        href="/project-description.pdf" 
+                        href="/Majesca_Maclan_Operational_Strategy.pdf" 
                         download="Majesca_Maclan_Operational_Strategy.pdf"
-                        className="btn btn-outline-dark btn-lg px-5 py-3 fs-6 fw-bolder"
+                        className="btn btn-outline-dark btn-lg px-5 py-3 fs-6 fw-bold"
                       >
                         <i className="bi bi-file-earmark-pdf me-2 fs-5"></i>
                         Download Strategy PDF

@@ -246,13 +246,13 @@ export const HomePage = () => {
           <div className="row text-center bg-white p-4 rounded shadow-sm border scrolling-number-container">
             <div className="col-md-4 py-3">
               <h2 className="display-4 fw-bold">
-                <AnimatedCounter endValue="45" suffix="%" startTrigger={animateMetrics} />
+                <AnimatedCounter endValue="120" suffix="%" startTrigger={animateMetrics} />
               </h2>
               <p className="text-muted text-uppercase small mb-0 fw-semibold">Revenue Growth Achieved</p>
             </div>
             <div className="col-md-4 py-3 border-start border-end">
               <h2 className="display-4 fw-bold">
-                £2.5M+
+                ₱100M+
               </h2>
               <p className="text-muted text-uppercase small mb-0 fw-semibold">Annual Budget Managed</p>
             </div>
