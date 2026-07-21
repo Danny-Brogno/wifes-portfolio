@@ -574,6 +574,22 @@ footer ul.footer-list li:last-of-type {
 
 @media screen and (max-width: 1023px) {
   
+  
+  nav.navbar div.container div#navbarSupportedContent ul.navbar-nav li {
+    margin-right: 0rem !important;
+  }
+  
+  nav.navbar div.container div#navbarSupportedContent ul.navbar-nav li:hover {
+    border-bottom: 2px solid rgba(var(--bs-primary-rgb), 0.8) !important;
+  }
+  
+  nav.navbar div.container div#navbarSupportedContent ul.navbar-nav li,
+  nav.navbar div.container div#navbarSupportedContent ul.navbar-nav li:hover,
+  nav.navbar div.container div#navbarSupportedContent ul.navbar-nav li:focus,
+  nav.navbar div.container div#navbarSupportedContent ul.navbar-nav li:active {
+    border-bottom: none !important;
+  }
+  
   nav .container div.d-flex.flex-column.align-items-flex-start {
     align-items: center;
   }
