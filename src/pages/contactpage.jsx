@@ -164,10 +164,10 @@ export const ContactPage = () => {
                 {/* Email Block */}
                 <div className="d-flex flex-column align-items-center mt-3">
                   <p className="mb-2 fs-5">Email me at the following email address:</p>
-                  <a href="mailto:majesca.maclan@gmail.com" className="text-decoration-none text-reset">
+                  <a href="mailto:info@majescamaclan.com" className="text-decoration-none text-reset">
                     <div className="d-flex align-items-center gap-3">
                       <i className="bi bi-envelope second fs-2"></i>
-                      <span className="fs-4 fw-normal">majesca.maclan@gmail.com</span>
+                      <span className="fs-4 fw-normal">info@majescamaclan.com</span>
                     </div>
                   </a>
                 </div>
