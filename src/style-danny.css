@@ -433,18 +433,20 @@ main section .under-jumbotron .d-flex.justify-content-evenly {
   }
 }
 
+/* LOADING START */
+
 .contact-page section.loading-container {
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-   background-color: rgba(0, 0, 0, 9);
+   background-color: rgba(0, 0, 0, 5);
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 99999; /* Highest priority layer */
-  animation: animateBg 10s linear infinite;
+  animation: animateBg 3s linear infinite;
 }
 
 @keyframes animateBg {
@@ -499,9 +501,11 @@ main section .under-jumbotron .d-flex.justify-content-evenly {
   }
 }
 
+/* LOADING END */
+
 /* CONTACT PAGE END */
 
-/* FOOTER */
+/* FOOTER START */
 
 footer #creator {
   text-align: center;
@@ -567,6 +571,7 @@ footer ul.footer-list li:last-of-type {
   margin-right: 0;
 }
 
+/* FOOTER END */
 
 /* ------------------------------------------- */
 /* ------------------------------------------- */
